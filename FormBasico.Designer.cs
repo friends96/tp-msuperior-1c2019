@@ -35,6 +35,7 @@
             this.labelNumeroEnFormaPolar = new System.Windows.Forms.Label();
             this.numericUpDownParteReal = new System.Windows.Forms.NumericUpDown();
             this.numericUpDownParteImaginaria = new System.Windows.Forms.NumericUpDown();
+            this.switchForm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownParteReal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownParteImaginaria)).BeginInit();
             this.SuspendLayout();
@@ -76,7 +77,7 @@
             // 
             this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmar.Location = new System.Drawing.Point(57, 178);
-            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(6);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(171, 42);
             this.btnConfirmar.TabIndex = 6;
@@ -99,7 +100,7 @@
             // 
             this.numericUpDownParteReal.DecimalPlaces = 2;
             this.numericUpDownParteReal.Location = new System.Drawing.Point(257, 51);
-            this.numericUpDownParteReal.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.numericUpDownParteReal.Margin = new System.Windows.Forms.Padding(6);
             this.numericUpDownParteReal.Minimum = new decimal(new int[] {
             100,
             0,
@@ -113,7 +114,7 @@
             // 
             this.numericUpDownParteImaginaria.DecimalPlaces = 2;
             this.numericUpDownParteImaginaria.Location = new System.Drawing.Point(257, 112);
-            this.numericUpDownParteImaginaria.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.numericUpDownParteImaginaria.Margin = new System.Windows.Forms.Padding(6);
             this.numericUpDownParteImaginaria.Minimum = new decimal(new int[] {
             100,
             0,
@@ -123,11 +124,22 @@
             this.numericUpDownParteImaginaria.Size = new System.Drawing.Size(220, 29);
             this.numericUpDownParteImaginaria.TabIndex = 10;
             // 
+            // switchForm
+            // 
+            this.switchForm.Location = new System.Drawing.Point(309, 162);
+            this.switchForm.Name = "switchForm";
+            this.switchForm.Size = new System.Drawing.Size(149, 75);
+            this.switchForm.TabIndex = 11;
+            this.switchForm.Text = "switchForm";
+            this.switchForm.UseVisualStyleBackColor = true;
+            this.switchForm.Click += new System.EventHandler(this.SwitchForm_Click);
+            // 
             // FormBasico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 354);
+            this.ClientSize = new System.Drawing.Size(499, 354);
+            this.Controls.Add(this.switchForm);
             this.Controls.Add(this.numericUpDownParteImaginaria);
             this.Controls.Add(this.numericUpDownParteReal);
             this.Controls.Add(this.labelNumeroEnFormaPolar);
@@ -136,7 +148,7 @@
             this.Controls.Add(this.labelParteImaginaria);
             this.Controls.Add(this.labelParteReal);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FormBasico";
             this.Text = "FormBasico";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownParteReal)).EndInit();
@@ -155,6 +167,7 @@
         private System.Windows.Forms.Label labelNumeroEnFormaPolar;
         private System.Windows.Forms.NumericUpDown numericUpDownParteReal;
         private System.Windows.Forms.NumericUpDown numericUpDownParteImaginaria;
+        private System.Windows.Forms.Button switchForm;
     }
 }
 

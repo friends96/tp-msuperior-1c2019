@@ -10,6 +10,7 @@ namespace TP_Matematica_Superior_Demo
     {
         private double _modulo;
         private double _argumento;
+        private ConvertidorService convertidor = new ConvertidorService();
 
         public NumeroComplejoPolar(double modulo, double argumento)
         {
@@ -25,6 +26,11 @@ namespace TP_Matematica_Superior_Demo
         public double GetArgumento()
         {
             return _argumento;
+        }
+
+        public NumeroComplejoBinomico GetFormaBinomica()
+        {
+            return convertidor.ConvertirABinomico(this);
         }
     }
 }

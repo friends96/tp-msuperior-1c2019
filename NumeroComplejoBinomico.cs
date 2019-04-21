@@ -16,11 +16,18 @@ namespace TP_Matematica_Superior_Demo
             this.parteReal = parteReal;
         }
 
+        public double GetParteReal()
+        {
+            return parteReal;
+        }
         public void SetParteImaginaria(double parteImaginaria)
         {
             this.parteImaginaria = parteImaginaria;
         }
-
+        public double GetParteImaginaria()
+        {
+            return parteImaginaria;
+        }
         public abstract NumeroComplejoPolar GetFormaPolar();
 
         protected double GetModulo()
