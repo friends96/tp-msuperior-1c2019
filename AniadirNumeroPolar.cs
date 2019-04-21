@@ -20,9 +20,11 @@ namespace TP_Matematica_Superior_Demo
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            NumeroComplejoPolar numeroPolar = new NumeroComplejoPolar((double)numericUpDownModulo.Value, (double) numericUpDownArgumento.Value  * Math.PI);
+            NumeroComplejoPolar numeroPolar = new NumeroComplejoPolar((double)numericUpDownModulo.Value, (double) numericUpDownArgumento.Value * Math.PI);
             NumeroComplejoBinomico binomico = convertidor.ConvertirABinomico(numeroPolar); 
             labelBinomicoAMostrar.Text = $"({Math.Round(binomico.GetParteReal(),2)}; {Math.Round(binomico.GetParteImaginaria(),2)})";
         }
+
+        
     }
 }

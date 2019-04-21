@@ -44,13 +44,8 @@
             // 
             this.numericUpDownModulo.DecimalPlaces = 2;
             this.numericUpDownModulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.numericUpDownModulo.Location = new System.Drawing.Point(233, 88);
+            this.numericUpDownModulo.Location = new System.Drawing.Point(250, 88);
             this.numericUpDownModulo.Margin = new System.Windows.Forms.Padding(6);
-            this.numericUpDownModulo.Minimum = new decimal(new int[] {
-            100,
-            0,
-            0,
-            -2147483648});
             this.numericUpDownModulo.Name = "numericUpDownModulo";
             this.numericUpDownModulo.Size = new System.Drawing.Size(220, 29);
             this.numericUpDownModulo.TabIndex = 10;
@@ -59,7 +54,7 @@
             // 
             this.labelModulo.AutoSize = true;
             this.labelModulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelModulo.Location = new System.Drawing.Point(58, 93);
+            this.labelModulo.Location = new System.Drawing.Point(46, 93);
             this.labelModulo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelModulo.Name = "labelModulo";
             this.labelModulo.Size = new System.Drawing.Size(74, 24);
@@ -70,7 +65,7 @@
             // 
             this.labelArgumento.AutoSize = true;
             this.labelArgumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelArgumento.Location = new System.Drawing.Point(58, 158);
+            this.labelArgumento.Location = new System.Drawing.Point(46, 158);
             this.labelArgumento.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelArgumento.Name = "labelArgumento";
             this.labelArgumento.Size = new System.Drawing.Size(104, 24);
@@ -81,7 +76,7 @@
             // 
             this.numericUpDownArgumento.DecimalPlaces = 2;
             this.numericUpDownArgumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.numericUpDownArgumento.Location = new System.Drawing.Point(233, 158);
+            this.numericUpDownArgumento.Location = new System.Drawing.Point(250, 156);
             this.numericUpDownArgumento.Margin = new System.Windows.Forms.Padding(6);
             this.numericUpDownArgumento.Minimum = new decimal(new int[] {
             100,
@@ -96,16 +91,16 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.5F);
-            this.label1.Location = new System.Drawing.Point(171, 158);
+            this.label1.Location = new System.Drawing.Point(159, 158);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 25);
+            this.label1.Size = new System.Drawing.Size(82, 25);
             this.label1.TabIndex = 14;
-            this.label1.Text = "[Rad]";
+            this.label1.Text = "[PI Rad]";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.button1.Location = new System.Drawing.Point(62, 226);
+            this.button1.Location = new System.Drawing.Point(50, 226);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(201, 37);
             this.button1.TabIndex = 15;
@@ -117,7 +112,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(58, 295);
+            this.label2.Location = new System.Drawing.Point(46, 295);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 24);
@@ -128,7 +123,7 @@
             // 
             this.labelBinomicoAMostrar.AutoSize = true;
             this.labelBinomicoAMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBinomicoAMostrar.Location = new System.Drawing.Point(229, 295);
+            this.labelBinomicoAMostrar.Location = new System.Drawing.Point(217, 295);
             this.labelBinomicoAMostrar.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelBinomicoAMostrar.Name = "labelBinomicoAMostrar";
             this.labelBinomicoAMostrar.Size = new System.Drawing.Size(16, 24);
