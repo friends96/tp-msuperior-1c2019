@@ -51,11 +51,23 @@
     <Compile Include="AniadirNumeroPolar.Designer.cs">
       <DependentUpon>AniadirNumeroPolar.cs</DependentUpon>
     </Compile>
+    <Compile Include="OperacionesBasicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OperacionesBasicas.Designer.cs">
+      <DependentUpon>OperacionesBasicas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormBasico.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormBasico.Designer.cs">
       <DependentUpon>FormBasico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="NumeroComplejoBinomico.cs" />
     <Compile Include="NumeroComplejoPolar.cs" />
@@ -72,6 +84,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBasico.resx">
       <DependentUpon>FormBasico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperacionesBasicas.resx">
+      <DependentUpon>OperacionesBasicas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -16,7 +16,7 @@ namespace TP_Matematica_Superior_Demo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormBasico());
+            Application.Run(new Home());
         }
     }
 }
