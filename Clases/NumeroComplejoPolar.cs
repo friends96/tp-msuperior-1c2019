@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TP_Matematica_Superior_Demo
 {
-    public class NumeroComplejoPolar
+    public class NumeroComplejoPolar : INumeroComplejo
     {
         private double _modulo;
         private double _argumento;
@@ -31,6 +31,11 @@ namespace TP_Matematica_Superior_Demo
         public NumeroComplejoBinomico GetFormaBinomica()
         {
             return convertidor.ConvertirABinomico(this);
+        }
+
+        public NumeroComplejoPolar GetFormaPolar()
+        {
+            return this;
         }
     }
 }

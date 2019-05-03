@@ -42,6 +42,7 @@
             // 
             // numericUpDownModulo
             // 
+            this.numericUpDownModulo.AccessibleName = "formsPolar";
             this.numericUpDownModulo.DecimalPlaces = 2;
             this.numericUpDownModulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.numericUpDownModulo.Location = new System.Drawing.Point(250, 88);
@@ -52,6 +53,7 @@
             // 
             // labelModulo
             // 
+            this.labelModulo.AccessibleName = "formsPolar";
             this.labelModulo.AutoSize = true;
             this.labelModulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelModulo.Location = new System.Drawing.Point(46, 93);
@@ -63,6 +65,7 @@
             // 
             // labelArgumento
             // 
+            this.labelArgumento.AccessibleName = "formsPolar";
             this.labelArgumento.AutoSize = true;
             this.labelArgumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelArgumento.Location = new System.Drawing.Point(46, 158);
@@ -74,6 +77,7 @@
             // 
             // numericUpDownArgumento
             // 
+            this.numericUpDownArgumento.AccessibleName = "formsPolar";
             this.numericUpDownArgumento.DecimalPlaces = 2;
             this.numericUpDownArgumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.numericUpDownArgumento.Location = new System.Drawing.Point(250, 156);
@@ -89,6 +93,7 @@
             // 
             // label1
             // 
+            this.label1.AccessibleName = "formsPolar";
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.5F);
             this.label1.Location = new System.Drawing.Point(159, 158);
@@ -99,6 +104,7 @@
             // 
             // button1
             // 
+            this.button1.AccessibleName = "formsPolar";
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.button1.Location = new System.Drawing.Point(50, 226);
             this.button1.Name = "button1";
@@ -110,6 +116,7 @@
             // 
             // label2
             // 
+            this.label2.AccessibleName = "formsPolar";
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(46, 295);
@@ -121,6 +128,7 @@
             // 
             // labelBinomicoAMostrar
             // 
+            this.labelBinomicoAMostrar.AccessibleName = "formsPolar";
             this.labelBinomicoAMostrar.AutoSize = true;
             this.labelBinomicoAMostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBinomicoAMostrar.Location = new System.Drawing.Point(217, 295);

@@ -138,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(499, 354);
+            this.ClientSize = new System.Drawing.Size(527, 380);
             this.Controls.Add(this.switchForm);
             this.Controls.Add(this.numericUpDownParteImaginaria);
             this.Controls.Add(this.numericUpDownParteReal);

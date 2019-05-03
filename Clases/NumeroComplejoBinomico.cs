@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace TP_Matematica_Superior_Demo
 {
-    public abstract class NumeroComplejoBinomico
+    public abstract class NumeroComplejoBinomico : INumeroComplejo
     {
         protected double parteReal;
         protected double parteImaginaria;
+        private static ConvertidorService convertidor = new ConvertidorService();
+
+        public static NumeroComplejoBinomico NewNumeroComplejoBinomico(double unaParteReal, double unaParteImaginaria)
+        {
+            return convertidor.CrearNumeroBinomico(unaParteReal, unaParteImaginaria);
+        }
 
         public void SetParteReal(double parteReal)
         {
@@ -29,6 +35,10 @@ namespace TP_Matematica_Superior_Demo
             return parteImaginaria;
         }
         public abstract NumeroComplejoPolar GetFormaPolar();
+        public NumeroComplejoBinomico GetFormaBinomica()
+        {
+            return this;
+        }
 
         protected double GetModulo()
         {
