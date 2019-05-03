@@ -24,9 +24,8 @@ namespace TP_Matematica_Superior_Demo
 
         private void OperacionesBasicas_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form formulario = new OperacionesBasicas(this);
-            formulario.Show();
+            Form formulario = new OperacionesBasicas();
+            formulario.ShowDialog();
         }
     }
 }

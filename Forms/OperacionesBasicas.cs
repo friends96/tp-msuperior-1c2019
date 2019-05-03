@@ -12,13 +12,11 @@ namespace TP_Matematica_Superior_Demo
 {
     public partial class OperacionesBasicas : Form
     {
-        public Form parent;
         INumeroComplejo operando1;
         INumeroComplejo operando2;
         public OperacionesBasicas(Form _parent)
         {
             InitializeComponent();
-            this.parent = _parent;
             operando1 = null;
             operando2 = null;
         }
@@ -26,7 +24,6 @@ namespace TP_Matematica_Superior_Demo
 
         private void Close(object sender, EventArgs e)
         {
-            parent.Show();
             this.Close();
         }
 
