@@ -14,7 +14,7 @@ namespace TP_Matematica_Superior_Demo
     {
         INumeroComplejo operando1;
         INumeroComplejo operando2;
-        public OperacionesBasicas(Form _parent)
+        public OperacionesBasicas()
         {
             InitializeComponent();
             operando1 = null;
