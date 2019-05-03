@@ -10,5 +10,6 @@ namespace TP_Matematica_Superior_Demo
     {
         NumeroComplejoPolar GetFormaPolar();
         NumeroComplejoBinomico GetFormaBinomica();
+        String Show();
     }
 }

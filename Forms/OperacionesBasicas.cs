@@ -38,7 +38,7 @@ namespace TP_Matematica_Superior_Demo
             AgregarNumero dialog = new AgregarNumero();
             dialog.ShowDialog();
             operando1 = dialog.resultado;
-            numero1.Text = operando1.GetFormaPolar().GetModulo().ToString();
+            numero1.Text = operando1.Show();
         }
 
         private void ElegirNumero2Button_Click(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace TP_Matematica_Superior_Demo
             AgregarNumero dialog = new AgregarNumero();
             dialog.ShowDialog();
             operando2 = dialog.resultado;
-            numero2.Text = operando2.GetFormaPolar().GetModulo().ToString();
+            numero2.Text = operando2.Show();
         }
     }
 }

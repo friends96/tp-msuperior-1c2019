@@ -18,6 +18,11 @@ namespace TP_Matematica_Superior_Demo
             this._argumento = argumento;
         }
 
+        public String Show()
+        {
+            return $"[{_modulo};{_argumento}π]";
+        }
+
         public double GetModulo()
         {
             return _modulo;
