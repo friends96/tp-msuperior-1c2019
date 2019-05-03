@@ -39,13 +39,15 @@
             this.numero2 = new System.Windows.Forms.Label();
             this.elegirNumero1Button = new System.Windows.Forms.Button();
             this.elegirNumero2Button = new System.Windows.Forms.Button();
+            this.CalcularButton = new System.Windows.Forms.Button();
+            this.resultadoLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Cerrar
             // 
-            this.Cerrar.Location = new System.Drawing.Point(368, 359);
+            this.Cerrar.Location = new System.Drawing.Point(378, 469);
             this.Cerrar.Name = "Cerrar";
-            this.Cerrar.Size = new System.Drawing.Size(99, 43);
+            this.Cerrar.Size = new System.Drawing.Size(76, 43);
             this.Cerrar.TabIndex = 0;
             this.Cerrar.Text = "Cerrar";
             this.Cerrar.UseVisualStyleBackColor = true;
@@ -155,11 +157,33 @@
             this.elegirNumero2Button.UseVisualStyleBackColor = true;
             this.elegirNumero2Button.Click += new System.EventHandler(this.ElegirNumero2Button_Click);
             // 
+            // CalcularButton
+            // 
+            this.CalcularButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.CalcularButton.Location = new System.Drawing.Point(325, 393);
+            this.CalcularButton.Name = "CalcularButton";
+            this.CalcularButton.Size = new System.Drawing.Size(192, 70);
+            this.CalcularButton.TabIndex = 11;
+            this.CalcularButton.Text = "Calcular";
+            this.CalcularButton.UseVisualStyleBackColor = true;
+            this.CalcularButton.Click += new System.EventHandler(this.CalcularButton_Click);
+            // 
+            // resultadoLabel
+            // 
+            this.resultadoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
+            this.resultadoLabel.Location = new System.Drawing.Point(63, 341);
+            this.resultadoLabel.Name = "resultadoLabel";
+            this.resultadoLabel.Size = new System.Drawing.Size(698, 49);
+            this.resultadoLabel.TabIndex = 12;
+            this.resultadoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // OperacionesBasicas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 524);
+            this.Controls.Add(this.resultadoLabel);
+            this.Controls.Add(this.CalcularButton);
             this.Controls.Add(this.elegirNumero2Button);
             this.Controls.Add(this.elegirNumero1Button);
             this.Controls.Add(this.numero2);
@@ -191,5 +215,7 @@
         private System.Windows.Forms.Label numero2;
         private System.Windows.Forms.Button elegirNumero1Button;
         private System.Windows.Forms.Button elegirNumero2Button;
+        private System.Windows.Forms.Button CalcularButton;
+        private System.Windows.Forms.Label resultadoLabel;
     }
 }

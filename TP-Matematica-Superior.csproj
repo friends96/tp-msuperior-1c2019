@@ -58,6 +58,12 @@
       <DependentUpon>AniadirNumeroPolar.cs</DependentUpon>
     </Compile>
     <Compile Include="Clases\INumeroComplejo.cs" />
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\OperacionesBasicas.cs">
       <SubType>Form</SubType>
     </Compile>
