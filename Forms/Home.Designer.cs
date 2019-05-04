@@ -70,7 +70,7 @@
             this.Controls.Add(this.OperacionesAvanzadas);
             this.Controls.Add(this.OperacionesBasicas);
             this.Name = "Home";
-            this.Text = "Home";
+            this.Text = "NCOM";
             this.Load += new System.EventHandler(this.Home_Load);
             this.ResumeLayout(false);
 

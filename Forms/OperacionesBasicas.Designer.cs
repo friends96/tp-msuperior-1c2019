@@ -196,7 +196,7 @@
             this.Controls.Add(this.Operando1Label);
             this.Controls.Add(this.Cerrar);
             this.Name = "OperacionesBasicas";
-            this.Text = "Form1";
+            this.Text = "Operaciones Basicas";
             this.ResumeLayout(false);
             this.PerformLayout();
 
