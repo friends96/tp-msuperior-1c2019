@@ -79,7 +79,7 @@ namespace TP_Matematica_Superior_Demo
         private void OkButton_Click(object sender, EventArgs e)
         {
             if (estaEnPolar)
-                resultado = new NumeroComplejoPolar((double)numericUpDownModulo.Value, (double)numericUpDownArgumento.Value);
+                resultado = new NumeroComplejoPolar((double)numericUpDownModulo.Value, (double)numericUpDownArgumento.Value * Math.PI);
             else
                 resultado = NumeroComplejoBinomico.NewNumeroComplejoBinomico((double)numericUpDownParteReal.Value, (double)numericUpDownParteImaginaria.Value);
             this.DialogResult = DialogResult.OK;

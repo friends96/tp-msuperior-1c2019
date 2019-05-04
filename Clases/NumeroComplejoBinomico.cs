@@ -18,7 +18,7 @@ namespace TP_Matematica_Superior_Demo
         }
         public String Show()
         {
-            return $"({parteReal} , {parteImaginaria})"; //lo separo asi porque se confunden las comas de los numeros, de la que separa la parte real de la imaginaria
+            return $"({Math.Round(parteReal, 2)} , {Math.Round(parteImaginaria, 2)})"; //lo separo asi porque se confunden las comas de los numeros, de la que separa la parte real de la imaginaria
         }
 
         public void SetParteReal(double parteReal)

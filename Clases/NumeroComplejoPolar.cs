@@ -20,7 +20,7 @@ namespace TP_Matematica_Superior_Demo
 
         public String Show()
         {
-            return $"[{_modulo};{_argumento}π]";
+            return $"[{Math.Round(_modulo, 2)};{Math.Round(_argumento / Math.PI, 2)}π]";
         }
 
         public double GetModulo()
