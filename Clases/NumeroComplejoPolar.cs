@@ -42,5 +42,15 @@ namespace TP_Matematica_Superior_Demo
         {
             return this;
         }
+
+        public double GetParteReal()
+        {
+            return convertidor.ConvertirABinomico(this).GetParteReal();
+        }
+
+        public double GetParteImaginaria()
+        {
+            return convertidor.ConvertirABinomico(this).GetParteImaginaria();
+        }
     }
 }

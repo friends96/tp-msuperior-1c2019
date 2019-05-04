@@ -92,6 +92,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ConvertidorService.cs" />
+    <Compile Include="Services\OperacionesService.cs" />
     <EmbeddedResource Include="Forms\AgregarNumero.resx">
       <DependentUpon>AgregarNumero.cs</DependentUpon>
     </EmbeddedResource>

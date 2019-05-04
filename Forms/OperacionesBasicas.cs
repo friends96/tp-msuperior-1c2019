@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TP_Matematica_Superior_Demo.Services;
 
 namespace TP_Matematica_Superior_Demo
 {
@@ -14,11 +15,14 @@ namespace TP_Matematica_Superior_Demo
     {
         INumeroComplejo operando1;
         INumeroComplejo operando2;
+        INumeroComplejo resultado;
+
         public OperacionesBasicas()
         {
             InitializeComponent();
             operando1 = null;
             operando2 = null;
+            resultado = null;
         }
 
 
@@ -56,19 +60,20 @@ namespace TP_Matematica_Superior_Demo
         {
             if( INumeroComplejo.Equals(operando1,null) || INumeroComplejo.Equals(operando2, null))
             {
-                resultadoLabel.Text = "Falta asignar algun operando,asignelo y vuelva a intentar";
+                resultadoLabel.Text = "Falta asignar algun operando, asignelo y vuelva a intentar";
             }
             else
             {
                 if(SumaButton.Checked)
                 {
                     //logica de la suma. en lo posible delegar todas las cuentas a un servicio asi queda limpia esta parte del codigo ?
-                    resultadoLabel.Text = "suma";
+                    resultado = OperacionesService.Sumar(operando1, operando2);
+                    
                 }
-                if(RestaButton.Checked)
+                if (RestaButton.Checked)
                 {
                     //resta
-                    resultadoLabel.Text = "resta";
+                    resultado = OperacionesService.Resta(operando1, operando2);
                 }
                 if(MultiplicacionButton.Checked)
                 {
@@ -80,6 +85,8 @@ namespace TP_Matematica_Superior_Demo
                     resultadoLabel.Text = "division";
 
                 }
+
+                resultadoLabel.Text = resultado.Show();
             }
 
 

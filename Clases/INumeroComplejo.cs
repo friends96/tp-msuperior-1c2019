@@ -10,6 +10,8 @@ namespace TP_Matematica_Superior_Demo
     {
         NumeroComplejoPolar GetFormaPolar();
         NumeroComplejoBinomico GetFormaBinomica();
+        double GetParteReal();
+        double GetParteImaginaria();
         String Show();
     }
 }
