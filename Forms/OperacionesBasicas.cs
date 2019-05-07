@@ -78,12 +78,19 @@ namespace TP_Matematica_Superior_Demo
                 if(MultiplicacionButton.Checked)
                 {
                     //multiplicacion
-                    resultadoLabel.Text = "mult";
+                    resultado = OperacionesService.Multiplicar(operando1, operando2);
                 }
                 if(DivisionButton.Checked)
                 {
-                    resultadoLabel.Text = "division";
-
+                    if(operando2.GetFormaPolar().GetModulo() != 0)
+                    {
+                        resultado = OperacionesService.Dividir(operando1, operando2);
+                    }
+                    else
+                    {
+                        resultadoLabel.Text = "No es posible dividir por cero";
+                        return;
+                    }
                 }
 
                 resultadoLabel.Text = resultado.Show();
