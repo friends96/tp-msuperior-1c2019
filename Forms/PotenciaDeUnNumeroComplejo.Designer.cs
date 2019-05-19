@@ -41,69 +41,83 @@
             // lblNumeroComplejo
             // 
             this.lblNumeroComplejo.AutoSize = true;
-            this.lblNumeroComplejo.Location = new System.Drawing.Point(31, 30);
+            this.lblNumeroComplejo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroComplejo.Location = new System.Drawing.Point(34, 38);
+            this.lblNumeroComplejo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblNumeroComplejo.Name = "lblNumeroComplejo";
-            this.lblNumeroComplejo.Size = new System.Drawing.Size(90, 13);
+            this.lblNumeroComplejo.Size = new System.Drawing.Size(165, 24);
             this.lblNumeroComplejo.TabIndex = 0;
             this.lblNumeroComplejo.Text = "Numero Complejo";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 101);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(34, 113);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.Size = new System.Drawing.Size(103, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Exponente";
             // 
             // numericUpDownExponente
             // 
-            this.numericUpDownExponente.Location = new System.Drawing.Point(34, 127);
+            this.numericUpDownExponente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownExponente.Location = new System.Drawing.Point(272, 111);
+            this.numericUpDownExponente.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.numericUpDownExponente.Name = "numericUpDownExponente";
-            this.numericUpDownExponente.Size = new System.Drawing.Size(87, 20);
+            this.numericUpDownExponente.Size = new System.Drawing.Size(85, 29);
             this.numericUpDownExponente.TabIndex = 2;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(171, 190);
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(246, 183);
+            this.lblResultado.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(19, 13);
+            this.lblResultado.Size = new System.Drawing.Size(34, 24);
             this.lblResultado.TabIndex = 4;
             this.lblResultado.Text = "----";
             // 
             // lblNumeroCargado
             // 
             this.lblNumeroCargado.AutoSize = true;
-            this.lblNumeroCargado.Location = new System.Drawing.Point(31, 58);
+            this.lblNumeroCargado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroCargado.Location = new System.Drawing.Point(291, 38);
+            this.lblNumeroCargado.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblNumeroCargado.Name = "lblNumeroCargado";
-            this.lblNumeroCargado.Size = new System.Drawing.Size(19, 13);
+            this.lblNumeroCargado.Size = new System.Drawing.Size(34, 24);
             this.lblNumeroCargado.TabIndex = 5;
             this.lblNumeroCargado.Text = "----";
             // 
             // btnAgregarNumero
             // 
-            this.btnAgregarNumero.Location = new System.Drawing.Point(129, 53);
+            this.btnAgregarNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarNumero.Location = new System.Drawing.Point(403, 19);
+            this.btnAgregarNumero.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAgregarNumero.Name = "btnAgregarNumero";
-            this.btnAgregarNumero.Size = new System.Drawing.Size(95, 23);
+            this.btnAgregarNumero.Size = new System.Drawing.Size(93, 62);
             this.btnAgregarNumero.TabIndex = 6;
             this.btnAgregarNumero.Text = "Agregar Numero";
             this.btnAgregarNumero.UseVisualStyleBackColor = true;
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(34, 185);
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Location = new System.Drawing.Point(197, 213);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcular.Size = new System.Drawing.Size(128, 51);
             this.btnCalcular.TabIndex = 7;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
             // 
             // PotenciaDeUnNumeroComplejo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(264, 255);
+            this.ClientSize = new System.Drawing.Size(536, 283);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.btnAgregarNumero);
             this.Controls.Add(this.lblNumeroCargado);
@@ -111,6 +125,8 @@
             this.Controls.Add(this.numericUpDownExponente);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblNumeroComplejo);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "PotenciaDeUnNumeroComplejo";
             this.Text = "PotenciaDeUnNumeroComplejo";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownExponente)).EndInit();

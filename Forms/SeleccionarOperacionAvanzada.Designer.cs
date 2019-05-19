@@ -60,7 +60,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(369, 104);
+            this.ClientSize = new System.Drawing.Size(382, 98);
             this.Controls.Add(this.comboBoxOperacion);
             this.Controls.Add(this.btnSiguiente);
             this.Name = "SeleccionarOperacionAvanzada";
