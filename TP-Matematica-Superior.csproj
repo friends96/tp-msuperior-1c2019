@@ -89,6 +89,18 @@
     <Compile Include="Clases\NumeroPrimerYCuartoCuadrante.cs" />
     <Compile Include="Clases\NumeroReal.cs" />
     <Compile Include="Clases\NumeroSegundoYTercerCuadrante.cs" />
+    <Compile Include="Forms\PotenciaDeUnNumeroComplejo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PotenciaDeUnNumeroComplejo.Designer.cs">
+      <DependentUpon>PotenciaDeUnNumeroComplejo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeleccionarOperacionAvanzada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeleccionarOperacionAvanzada.Designer.cs">
+      <DependentUpon>SeleccionarOperacionAvanzada.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ConvertidorService.cs" />
@@ -107,6 +119,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\OperacionesBasicas.resx">
       <DependentUpon>OperacionesBasicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PotenciaDeUnNumeroComplejo.resx">
+      <DependentUpon>PotenciaDeUnNumeroComplejo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeleccionarOperacionAvanzada.resx">
+      <DependentUpon>SeleccionarOperacionAvanzada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

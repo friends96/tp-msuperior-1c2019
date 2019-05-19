@@ -51,6 +51,7 @@
             this.OperacionesAvanzadas.TabIndex = 1;
             this.OperacionesAvanzadas.Text = "Operaciones Avanzadas";
             this.OperacionesAvanzadas.UseVisualStyleBackColor = true;
+            this.OperacionesAvanzadas.Click += new System.EventHandler(this.OperacionesAvanzadas_Click);
             // 
             // SumaFasores
             // 

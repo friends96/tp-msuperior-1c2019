@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TP_Matematica_Superior_Demo.Forms;
 
 namespace TP_Matematica_Superior_Demo
 {
@@ -26,6 +27,12 @@ namespace TP_Matematica_Superior_Demo
         {
             Form formulario = new OperacionesBasicas();
             formulario.ShowDialog();
+        }
+
+        private void OperacionesAvanzadas_Click(object sender, EventArgs e)
+        {
+            Form formSeleccionarOperacion = new SeleccionarOperacionAvanzada();
+            formSeleccionarOperacion.ShowDialog();
         }
     }
 }
