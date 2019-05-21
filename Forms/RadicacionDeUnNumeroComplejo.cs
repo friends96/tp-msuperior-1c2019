@@ -15,7 +15,7 @@ namespace TP_Matematica_Superior_Demo.Forms
     public partial class RadicacionDeUnNumeroComplejo : Form
     {
         private INumeroComplejo radicando;
-        private int indice=0;
+        private int indice = 0;
         public RadicacionDeUnNumeroComplejo()
         {
             InitializeComponent();
@@ -76,8 +76,24 @@ namespace TP_Matematica_Superior_Demo.Forms
             }
 
         }
+        private void RaicesPrimitivas_Click(object sender, EventArgs e)
+        {
+            indice = (int)numericUpDownIndice.Value;
+            if (indice <= 0)
+            {
+                lblError.Text += "ingrese un indice positivo";
+                return;
+            }
+            listBoxResultados.Items.Clear();
+            foreach (var item in OperacionesService.RaicesPrimitivasDeLaUnidadReal(indice))
+            {
+                listBoxResultados.Items.Add(item);
+            }
+
+        }
     }
 }
+
 
 
 

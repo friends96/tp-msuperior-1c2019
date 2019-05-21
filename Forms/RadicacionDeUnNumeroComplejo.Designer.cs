@@ -37,6 +37,7 @@
             this.lblNumeroComplejo = new System.Windows.Forms.Label();
             this.numericUpDownIndice = new System.Windows.Forms.NumericUpDown();
             this.lblError = new System.Windows.Forms.Label();
+            this.btnRaizPrimitiva = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIndice)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,17 +116,28 @@
             // lblError
             // 
             this.lblError.AutoSize = true;
-            this.lblError.Location = new System.Drawing.Point(178, 143);
+            this.lblError.Location = new System.Drawing.Point(12, 168);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(19, 13);
             this.lblError.TabIndex = 8;
             this.lblError.Text = "----";
             // 
+            // btnRaizPrimitiva
+            // 
+            this.btnRaizPrimitiva.Location = new System.Drawing.Point(169, 133);
+            this.btnRaizPrimitiva.Name = "btnRaizPrimitiva";
+            this.btnRaizPrimitiva.Size = new System.Drawing.Size(75, 72);
+            this.btnRaizPrimitiva.TabIndex = 9;
+            this.btnRaizPrimitiva.Text = "Raices primitivas de la unidad";
+            this.btnRaizPrimitiva.UseVisualStyleBackColor = true;
+            this.btnRaizPrimitiva.Click += new System.EventHandler(this.RaicesPrimitivas_Click);
+            // 
             // RadicacionDeUnNumeroComplejo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(254, 373);
+            this.ClientSize = new System.Drawing.Size(323, 373);
+            this.Controls.Add(this.btnRaizPrimitiva);
             this.Controls.Add(this.lblError);
             this.Controls.Add(this.numericUpDownIndice);
             this.Controls.Add(this.lblNumeroComplejo);
@@ -154,5 +166,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDownIndice;
         private System.Windows.Forms.Label lblError;
         public System.Windows.Forms.ListBox listBoxResultados;
+        private System.Windows.Forms.Button btnRaizPrimitiva;
     }
 }
