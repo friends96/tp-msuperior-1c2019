@@ -49,6 +49,27 @@ namespace TP_Matematica_Superior_Demo.Services
             return new NumeroComplejoPolar(moduloResultado, argumentoResultado);
         }
 
-        
+        public static List<INumeroComplejo> Radicacion(INumeroComplejo radicando, int indice)
+        {
+            List<INumeroComplejo> resultado = new List<INumeroComplejo>();
+            NumeroComplejoPolar operando = radicando.GetFormaPolar();
+            double moduloResultante = Math.Pow(operando.GetModulo(), 1 / indice);   //no hay funcion para hacer la raiz N de un numero, asi que hago la potencia a la 1/N
+            double argumentoResultante = operando.GetArgumento() / indice;
+            NumeroComplejoPolar nuevaRaiz = new NumeroComplejoPolar(moduloResultante, argumentoResultante);
+            double variacionAngulo = 2 * Math.PI / indice;
+
+            resultado.Add(nuevaRaiz);
+            int i = 1;
+            while(i<indice)
+            {
+                argumentoResultante += variacionAngulo;
+                nuevaRaiz = new NumeroComplejoPolar(moduloResultante, argumentoResultante);
+
+                resultado.Add(nuevaRaiz);
+                i++;
+            }
+
+            return resultado;
+        }
     }
 }

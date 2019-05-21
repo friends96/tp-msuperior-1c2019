@@ -36,6 +36,7 @@
             this.listBoxResultados = new System.Windows.Forms.ListBox();
             this.lblNumeroComplejo = new System.Windows.Forms.Label();
             this.numericUpDownIndice = new System.Windows.Forms.NumericUpDown();
+            this.lblError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownIndice)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,6 +75,7 @@
             this.btnCargarNumero.TabIndex = 3;
             this.btnCargarNumero.Text = "Agregar Numero";
             this.btnCargarNumero.UseVisualStyleBackColor = true;
+            this.btnCargarNumero.Click += new System.EventHandler(this.BtnCargarNumero_Click);
             // 
             // btnCalcular
             // 
@@ -83,10 +85,12 @@
             this.btnCalcular.TabIndex = 4;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.BtnCalcular_Click);
             // 
             // listBoxResultados
             // 
             this.listBoxResultados.FormattingEnabled = true;
+            this.listBoxResultados.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.listBoxResultados.Location = new System.Drawing.Point(12, 208);
             this.listBoxResultados.Name = "listBoxResultados";
             this.listBoxResultados.Size = new System.Drawing.Size(143, 134);
@@ -108,11 +112,21 @@
             this.numericUpDownIndice.Size = new System.Drawing.Size(81, 20);
             this.numericUpDownIndice.TabIndex = 7;
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Location = new System.Drawing.Point(178, 143);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(19, 13);
+            this.lblError.TabIndex = 8;
+            this.lblError.Text = "----";
+            // 
             // RadicacionDeUnNumeroComplejo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(254, 373);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.numericUpDownIndice);
             this.Controls.Add(this.lblNumeroComplejo);
             this.Controls.Add(this.listBoxResultados);
@@ -136,8 +150,9 @@
         private System.Windows.Forms.Label lblResultados;
         private System.Windows.Forms.Button btnCargarNumero;
         private System.Windows.Forms.Button btnCalcular;
-        private System.Windows.Forms.ListBox listBoxResultados;
         private System.Windows.Forms.Label lblNumeroComplejo;
         private System.Windows.Forms.NumericUpDown numericUpDownIndice;
+        private System.Windows.Forms.Label lblError;
+        public System.Windows.Forms.ListBox listBoxResultados;
     }
 }
