@@ -23,6 +23,8 @@ namespace TP_Matematica_Superior_Demo
             return $"[{Math.Round(_modulo, 2)};{Math.Round(_argumento / Math.PI, 2)}π]";
         }
 
+
+
         public double GetModulo()
         {
             return _modulo;

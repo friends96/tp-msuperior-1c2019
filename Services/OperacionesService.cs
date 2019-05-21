@@ -41,6 +41,14 @@ namespace TP_Matematica_Superior_Demo.Services
             return NumeroComplejoBinomico.NewNumeroComplejoBinomico(numerador.GetParteReal() / resultadoProductoDeConjugados, numerador.GetParteImaginaria() / resultadoProductoDeConjugados);
         }
 
+        public static INumeroComplejo Potenciacion(INumeroComplejo radicando, int indice)
+        {
+            double moduloResultado = Math.Pow(radicando.GetFormaPolar().GetModulo(), indice);
+            double argumentoResultado = radicando.GetFormaPolar().GetArgumento() * indice;
+
+            return new NumeroComplejoPolar(moduloResultado, argumentoResultado);
+        }
+
         
     }
 }

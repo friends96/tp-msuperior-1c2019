@@ -73,12 +73,13 @@
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(246, 183);
+            this.lblResultado.Location = new System.Drawing.Point(34, 175);
             this.lblResultado.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(34, 24);
             this.lblResultado.TabIndex = 4;
             this.lblResultado.Text = "----";
+            this.lblResultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblNumeroCargado
             // 
@@ -106,13 +107,14 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(197, 213);
+            this.btnCalcular.Location = new System.Drawing.Point(38, 217);
             this.btnCalcular.Margin = new System.Windows.Forms.Padding(6);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(128, 51);
             this.btnCalcular.TabIndex = 7;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.BtnCalcular_Click);
             // 
             // PotenciaDeUnNumeroComplejo
             // 
