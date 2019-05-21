@@ -15,7 +15,7 @@ namespace TP_Matematica_Superior_Demo
         public NumeroComplejoPolar(double modulo, double argumento)
         {
             this._modulo = modulo;
-            this._argumento = argumento;
+            this._argumento = PrimerGiroPositivo(argumento);
         }
 
         public String Show()
@@ -23,7 +23,25 @@ namespace TP_Matematica_Superior_Demo
             return $"[{Math.Round(_modulo, 2)};{Math.Round(_argumento / Math.PI, 2)}π]";
         }
 
-
+        private double PrimerGiroPositivo(double unArgumento)
+        {
+            if (unArgumento >= 2 * Math.PI)
+            {
+                return unArgumento % (2 * Math.PI);
+            }
+            else if(unArgumento >= 0 && unArgumento < 2 * Math.PI)
+            {
+                return unArgumento;
+            }
+            else if(unArgumento < 0 && ((unArgumento % (2*Math.PI)) != 0))
+            {
+                return (unArgumento % (2 * Math.PI)) + 2 * Math.PI;
+            }
+            else
+            {
+                return 0;
+            }
+        }
 
         public double GetModulo()
         {
