@@ -95,6 +95,12 @@
     <Compile Include="Forms\PotenciaDeUnNumeroComplejo.Designer.cs">
       <DependentUpon>PotenciaDeUnNumeroComplejo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\RadicacionDeUnNumeroComplejo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RadicacionDeUnNumeroComplejo.Designer.cs">
+      <DependentUpon>RadicacionDeUnNumeroComplejo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SeleccionarOperacionAvanzada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PotenciaDeUnNumeroComplejo.resx">
       <DependentUpon>PotenciaDeUnNumeroComplejo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RadicacionDeUnNumeroComplejo.resx">
+      <DependentUpon>RadicacionDeUnNumeroComplejo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SeleccionarOperacionAvanzada.resx">
       <DependentUpon>SeleccionarOperacionAvanzada.cs</DependentUpon>

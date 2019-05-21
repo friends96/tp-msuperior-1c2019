@@ -27,7 +27,8 @@ namespace TP_Matematica_Superior_Demo.Forms
             }
             else
             {
-
+                Form formRadicacionDeComplejo = new RadicacionDeUnNumeroComplejo();
+                formRadicacionDeComplejo.ShowDialog();
             }
         }
     }

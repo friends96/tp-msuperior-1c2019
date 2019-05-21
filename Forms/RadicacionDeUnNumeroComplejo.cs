@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace TP_Matematica_Superior_Demo.Forms
 {
-    public partial class PotenciaDeUnNumeroComplejo : Form
+    public partial class RadicacionDeUnNumeroComplejo : Form
     {
-        public PotenciaDeUnNumeroComplejo()
+        public RadicacionDeUnNumeroComplejo()
         {
             InitializeComponent();
-        }
-
-        private void BtnAgregarNumero_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

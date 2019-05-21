@@ -64,7 +64,7 @@
             // 
             this.numericUpDownExponente.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numericUpDownExponente.Location = new System.Drawing.Point(272, 111);
-            this.numericUpDownExponente.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.numericUpDownExponente.Margin = new System.Windows.Forms.Padding(6);
             this.numericUpDownExponente.Name = "numericUpDownExponente";
             this.numericUpDownExponente.Size = new System.Drawing.Size(85, 29);
             this.numericUpDownExponente.TabIndex = 2;
@@ -95,18 +95,19 @@
             // 
             this.btnAgregarNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarNumero.Location = new System.Drawing.Point(403, 19);
-            this.btnAgregarNumero.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnAgregarNumero.Margin = new System.Windows.Forms.Padding(6);
             this.btnAgregarNumero.Name = "btnAgregarNumero";
             this.btnAgregarNumero.Size = new System.Drawing.Size(93, 62);
             this.btnAgregarNumero.TabIndex = 6;
             this.btnAgregarNumero.Text = "Agregar Numero";
             this.btnAgregarNumero.UseVisualStyleBackColor = true;
+            this.btnAgregarNumero.Click += new System.EventHandler(this.BtnAgregarNumero_Click);
             // 
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcular.Location = new System.Drawing.Point(197, 213);
-            this.btnCalcular.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(6);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(128, 51);
             this.btnCalcular.TabIndex = 7;
@@ -126,7 +127,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblNumeroComplejo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "PotenciaDeUnNumeroComplejo";
             this.Text = "PotenciaDeUnNumeroComplejo";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownExponente)).EndInit();
