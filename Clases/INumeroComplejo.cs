@@ -12,6 +12,8 @@ namespace TP_Matematica_Superior_Demo
         NumeroComplejoBinomico GetFormaBinomica();
         double GetParteReal();
         double GetParteImaginaria();
+        double GetModulo();
+        double GetArgumento();
         String Show();
     }
 }

@@ -44,12 +44,12 @@ namespace TP_Matematica_Superior_Demo
             return this;
         }
 
-        protected double GetModulo()
+        public double GetModulo()
         {
             return Math.Sqrt(Math.Pow(parteReal, 2) + Math.Pow(parteImaginaria, 2));
         }
 
-        protected double GetArgumento()
+        public double GetArgumento()
         {
             return Math.Atan(parteImaginaria / parteReal);
         }

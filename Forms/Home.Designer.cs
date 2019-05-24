@@ -61,6 +61,7 @@
             this.SumaFasores.TabIndex = 2;
             this.SumaFasores.Text = "Suma Fasores";
             this.SumaFasores.UseVisualStyleBackColor = true;
+            this.SumaFasores.Click += new System.EventHandler(this.SumaFasores_Click);
             // 
             // Home
             // 

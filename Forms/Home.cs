@@ -34,5 +34,12 @@ namespace TP_Matematica_Superior_Demo
             Form formSeleccionarOperacion = new SeleccionarOperacionAvanzada();
             formSeleccionarOperacion.ShowDialog();
         }
+
+        private void SumaFasores_Click(object sender, EventArgs e)
+        {
+            Form formSeleccionarOperacion = new SeleccionarSumaFasores();
+            formSeleccionarOperacion.ShowDialog();
+
+        }
     }
 }
