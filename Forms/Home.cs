@@ -37,7 +37,7 @@ namespace TP_Matematica_Superior_Demo
 
         private void SumaFasores_Click(object sender, EventArgs e)
         {
-            Form formSeleccionarOperacion = new SeleccionarSumaFasores();
+            Form formSeleccionarOperacion = new SeleccionarSumaFunciones();
             formSeleccionarOperacion.ShowDialog();
 
         }

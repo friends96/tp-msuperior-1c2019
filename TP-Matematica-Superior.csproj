@@ -66,6 +66,12 @@
     <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SeleccionarSumaFunciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeleccionarSumaFunciones.Designer.cs">
+      <DependentUpon>SeleccionarSumaFunciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\OperacionesBasicas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SeleccionarSumaFasores.resx">
       <DependentUpon>SeleccionarSumaFasores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeleccionarSumaFunciones.resx">
+      <DependentUpon>SeleccionarSumaFunciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
