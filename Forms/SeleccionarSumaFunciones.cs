@@ -56,12 +56,12 @@ namespace TP_Matematica_Superior_Demo.Forms
             Operador Servicio = new Operador();
             fasorFinal = Servicio.Sumar(fasor1,fasor2);
 
-            lblReporteFinal.Text = $"f1 + f2 = {Math.Round(fasorFinal.modulo, 3)} sen( {txtBoxPulso1.Text} X  + {Math.Round(fasorFinal.argumento,3)} )";
+            lblReporteFinal.Text = $"f1 + f2 = {Math.Round(fasorFinal.modulo, 3)} sen( {txtBoxPulso1.Text} X  + {Math.Round(fasorFinal.argumento,4)} )";
 
             MessageBox.Show($"" +
-                $"F1 = ({fasor1.real};{fasor1.img}) -- [{fasor1.modulo};{fasor1.argumento}]\n" +
-                $"F2 = ({fasor2.real};{fasor2.img}) -- [{fasor2.modulo};{fasor2.argumento}]\n" +
-                $"FR = ({fasorFinal.real};{fasorFinal.img}) -- [{fasorFinal.modulo};{fasorFinal.argumento}]");
+                $"F1 = ({Math.Round(fasor1.real,4)};{Math.Round(fasor1.img,4)}) -- [{Math.Round(fasor1.modulo,4)};{Math.Round(fasor1.argumento,4)}]\n" +
+                $"F2 = ({Math.Round(fasor2.real,4)};{Math.Round(fasor2.img,4)}) -- [{Math.Round(fasor2.modulo,4)};{Math.Round(fasor2.argumento,4)}]\n" +
+                $"FR = ({Math.Round(fasorFinal.real,4)};{Math.Round(fasorFinal.img,4)}) -- [{Math.Round(fasorFinal.modulo,4)};{Math.Round(fasorFinal.argumento),4}]\n");
 
             //lblReporteFinal.Text = $"[{fasor1.modulo} , {fasor1.argumento}] ---- >>  ({fasor1.real} , {fasor1.img})";
             //lblReporteFinal.Text = $"[{Math.Round(fasor2.modulo,3)} , {Math.Round(fasor2.argumento, 3)}] ---- >>  ({Math.Round(fasor2.real, 3)} , {Math.Round(fasor2.img, 3)})";

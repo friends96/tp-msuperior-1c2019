@@ -29,7 +29,7 @@ namespace TP_Matematica_Superior_Demo.Clases
         public NComplejo(double modulo, double argumento, string tipo)
         {
             this.modulo = modulo;
-            this.argumento = argumento*3.141593;
+            this.argumento = argumento*Math.PI;
             complementarBinomica();
         }
 
@@ -43,8 +43,9 @@ namespace TP_Matematica_Superior_Demo.Clases
         private void complementarPolar()
         {
             //throw new NotImplementedException();
-            modulo = Math.Sqrt(Math.Pow(real, 2) + Math.Pow(img, 2));
+            modulo = (double)Math.Sqrt(Math.Pow(real, 2) + Math.Pow(img, 2));
             argumento = Math.Atan2(img, real);
+            //argumento = Math.Atan(img / real);
         }
 
         public void ImplementarBinario(double real, double img)
