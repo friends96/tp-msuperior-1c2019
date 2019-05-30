@@ -34,7 +34,7 @@
             this.txtBoxPulso1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtBoxArgunmento1 = new System.Windows.Forms.TextBox();
+            this.txtBoxArgumento1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -114,14 +114,14 @@
             this.label4.Text = "π)";
             this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
-            // txtBoxArgunmento1
+            // txtBoxArgumento1
             // 
-            this.txtBoxArgunmento1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxArgunmento1.Location = new System.Drawing.Point(483, 64);
-            this.txtBoxArgunmento1.Name = "txtBoxArgunmento1";
-            this.txtBoxArgunmento1.Size = new System.Drawing.Size(43, 23);
-            this.txtBoxArgunmento1.TabIndex = 1;
-            this.txtBoxArgunmento1.Text = "0";
+            this.txtBoxArgumento1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxArgumento1.Location = new System.Drawing.Point(483, 64);
+            this.txtBoxArgumento1.Name = "txtBoxArgumento1";
+            this.txtBoxArgumento1.Size = new System.Drawing.Size(43, 23);
+            this.txtBoxArgumento1.TabIndex = 1;
+            this.txtBoxArgumento1.Text = "0";
             // 
             // label5
             // 
@@ -256,7 +256,7 @@
             // 
             this.lblReporteFinal.AutoSize = true;
             this.lblReporteFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReporteFinal.Location = new System.Drawing.Point(296, 313);
+            this.lblReporteFinal.Location = new System.Drawing.Point(199, 308);
             this.lblReporteFinal.Name = "lblReporteFinal";
             this.lblReporteFinal.Size = new System.Drawing.Size(37, 29);
             this.lblReporteFinal.TabIndex = 3;
@@ -273,7 +273,7 @@
             this.Controls.Add(this.txtBoxArgumento2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtBoxPulso2);
-            this.Controls.Add(this.txtBoxArgunmento1);
+            this.Controls.Add(this.txtBoxArgumento1);
             this.Controls.Add(this.txtBoxModulo2);
             this.Controls.Add(this.txtBoxPulso1);
             this.Controls.Add(this.label10);
@@ -302,7 +302,7 @@
         private System.Windows.Forms.TextBox txtBoxPulso1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtBoxArgunmento1;
+        private System.Windows.Forms.TextBox txtBoxArgumento1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label6;

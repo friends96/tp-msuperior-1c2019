@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TP_Matematica_Superior_Demo.Clases
+{
+    class NComplejo
+    {
+        public double real { get; set; }
+        public double img { get; set; }
+        public double modulo { get; set; }
+        public double argumento { get; set; }
+
+        public NComplejo()
+        {
+            real = 0;
+            img = 0;
+            modulo = 0;
+            argumento = 0;
+        }
+        public NComplejo(double real, double img)
+        {
+            this.real = real;
+            this.img = img;
+            complementarPolar();
+        }
+        public NComplejo(double modulo, double argumento, string tipo)
+        {
+            this.modulo = modulo;
+            this.argumento = argumento*3.141593;
+            complementarBinomica();
+        }
+
+        private void complementarBinomica()
+        {
+            //throw new NotImplementedException();
+            real = modulo * Math.Cos(argumento);
+            img = modulo * Math.Sin(argumento);
+        }
+
+        private void complementarPolar()
+        {
+            //throw new NotImplementedException();
+            modulo = Math.Sqrt(Math.Pow(real, 2) + Math.Pow(img, 2));
+            argumento = Math.Atan2(img, real);
+        }
+
+        public void ImplementarBinario(double real, double img)
+        {
+            this.real = real;
+            this.img = img;
+            complementarPolar();
+        }
+    }
+}

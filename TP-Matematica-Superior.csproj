@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Clases\Fasor.cs" />
     <Compile Include="Clases\IFasor.cs" />
+    <Compile Include="Clases\NComplejo.cs" />
     <Compile Include="Forms\AgregarNumero.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +126,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ConvertidorService.cs" />
     <Compile Include="Services\OperacionesService.cs" />
+    <Compile Include="Services\Operador.cs" />
     <EmbeddedResource Include="Forms\AgregarNumero.resx">
       <DependentUpon>AgregarNumero.cs</DependentUpon>
     </EmbeddedResource>
