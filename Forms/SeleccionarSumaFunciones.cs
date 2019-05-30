@@ -14,16 +14,17 @@ namespace TP_Matematica_Superior_Demo.Forms
 {
     public partial class SeleccionarSumaFunciones : Form
     {
-        public double modulo1 { get; set; }
-        public double pulso1 { get; set; }
-        public double argumento1 { get; set; }
+        private NComplejo complejo1 { get; set; }
+        private NComplejo complejo2 { get; set; }
+        private NComplejo resultado { get; set; }
 
-        
+        private Operador Servicio = new Operador();
 
         public SeleccionarSumaFunciones()
         {
             InitializeComponent();
             this.CenterToScreen();
+            //txtBoxModulo1.Focus();
         }
 
         private void Label4_Click(object sender, EventArgs e)
@@ -48,23 +49,93 @@ namespace TP_Matematica_Superior_Demo.Forms
 
         private void Fasoriando()
         {
-            //throw new NotImplementedException();
-            NComplejo fasor1 = new NComplejo(Convert.ToDouble(txtBoxModulo1.Text), Convert.ToDouble(txtBoxArgumento1.Text), "POLAR");
-            NComplejo fasor2 = new NComplejo(Convert.ToDouble(txtBoxModulo2.Text), Convert.ToDouble(txtBoxArgumento2.Text), "POLAR");
-            NComplejo fasorFinal = new NComplejo();
+            if(txtBoxPulso1.Text == txtBoxPulso2.Text)
+            {
+                linkLabel1.Visible = true;
+                NComplejo fasor1 = new NComplejo(Convert.ToDouble(txtBoxModulo1.Text), Convert.ToDouble(txtBoxArgumento1.Text), "POLAR");
+                NComplejo fasor2 = new NComplejo(Convert.ToDouble(txtBoxModulo2.Text), Convert.ToDouble(txtBoxArgumento2.Text), "POLAR");
+                NComplejo fasorFinal = new NComplejo();
 
-            Operador Servicio = new Operador();
-            fasorFinal = Servicio.Sumar(fasor1,fasor2);
+                fasorFinal = Servicio.Sumar(fasor1, fasor2);
 
-            lblReporteFinal.Text = $"f1 + f2 = {Math.Round(fasorFinal.modulo, 3)} sen( {txtBoxPulso1.Text} X  + {Math.Round(fasorFinal.argumento,4)} )";
+                //Asignando
+                complejo1 = fasor1;
+                complejo2 = fasor2;
+                resultado = fasorFinal;
 
-            MessageBox.Show($"" +
-                $"F1 = ({Math.Round(fasor1.real,4)};{Math.Round(fasor1.img,4)}) -- [{Math.Round(fasor1.modulo,4)};{Math.Round(fasor1.argumento,4)}]\n" +
-                $"F2 = ({Math.Round(fasor2.real,4)};{Math.Round(fasor2.img,4)}) -- [{Math.Round(fasor2.modulo,4)};{Math.Round(fasor2.argumento,4)}]\n" +
-                $"FR = ({Math.Round(fasorFinal.real,4)};{Math.Round(fasorFinal.img,4)}) -- [{Math.Round(fasorFinal.modulo,4)};{Math.Round(fasorFinal.argumento),4}]\n");
+                lblReporteFinal.Text = $"f1 + f2 = {Math.Round(fasorFinal.modulo, 3)} sen( {txtBoxPulso1.Text} X  + {Math.Round(fasorFinal.argumento, 4)} )";
+            }
+            else
+            {
+                linkLabel1.Visible = false;
+                lblReporteFinal.Text = "---";
+                MessageBox.Show("Frecuencias Diferentes!!!!!\nNo es posible realizar la suma");
+            }
+            
+        }
 
-            //lblReporteFinal.Text = $"[{fasor1.modulo} , {fasor1.argumento}] ---- >>  ({fasor1.real} , {fasor1.img})";
-            //lblReporteFinal.Text = $"[{Math.Round(fasor2.modulo,3)} , {Math.Round(fasor2.argumento, 3)}] ---- >>  ({Math.Round(fasor2.real, 3)} , {Math.Round(fasor2.img, 3)})";
+        private void SeleccionarSumaFunciones_Load(object sender, EventArgs e)
+        {
+            //txtBoxModulo1.Focus();
+            this.ActiveControl = txtBoxModulo1;
+        }
+
+        private void TxtBoxModulo1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                txtBoxPulso1.Focus();
+            }
+        }
+
+        private void TxtBoxPulso1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                txtBoxArgumento1.Focus();
+            }
+        }
+
+        private void TxtBoxArgumento1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                txtBoxModulo2.Focus();
+            }
+        }
+
+        private void TxtBoxModulo2_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void TxtBoxPulso2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                txtBoxArgumento2.Focus();
+            }
+        }
+
+        private void TxtBoxModulo2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                txtBoxPulso2.Focus();
+            }
+        }
+
+        private void TxtBoxArgumento2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+                if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                button1.Focus();
+            }
+        }
+
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Servicio.REPORTARfasores(complejo1, complejo2, resultado);
         }
     }
 }
