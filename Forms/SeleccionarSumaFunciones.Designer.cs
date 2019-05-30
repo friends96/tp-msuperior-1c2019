@@ -66,13 +66,15 @@
             // 
             this.lblTrigo1.AutoSize = true;
             this.lblTrigo1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblTrigo1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTrigo1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTrigo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTrigo1.Location = new System.Drawing.Point(312, 64);
             this.lblTrigo1.Name = "lblTrigo1";
-            this.lblTrigo1.Size = new System.Drawing.Size(47, 25);
+            this.lblTrigo1.Size = new System.Drawing.Size(48, 27);
             this.lblTrigo1.TabIndex = 0;
-            this.lblTrigo1.Text = "sen";
+            this.lblTrigo1.Text = "cos";
+            this.lblTrigo1.Click += new System.EventHandler(this.LblTrigo1_Click);
             // 
             // txtBoxModulo1
             // 
@@ -111,10 +113,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(523, 58);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 31);
+            this.label4.Size = new System.Drawing.Size(37, 31);
             this.label4.TabIndex = 0;
             this.label4.Text = "π)";
             this.label4.Click += new System.EventHandler(this.Label4_Click);
@@ -202,10 +204,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(523, 115);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(38, 31);
+            this.label10.Size = new System.Drawing.Size(37, 31);
             this.label10.TabIndex = 0;
             this.label10.Text = "π)";
             this.label10.Click += new System.EventHandler(this.Label4_Click);
@@ -248,13 +250,15 @@
             // 
             this.lblTrigo2.AutoSize = true;
             this.lblTrigo2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblTrigo2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTrigo2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblTrigo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTrigo2.Location = new System.Drawing.Point(312, 121);
             this.lblTrigo2.Name = "lblTrigo2";
-            this.lblTrigo2.Size = new System.Drawing.Size(47, 25);
+            this.lblTrigo2.Size = new System.Drawing.Size(48, 27);
             this.lblTrigo2.TabIndex = 0;
-            this.lblTrigo2.Text = "sen";
+            this.lblTrigo2.Text = "cos";
+            this.lblTrigo2.Click += new System.EventHandler(this.LblTrigo2_Click);
             // 
             // button1
             // 
@@ -269,12 +273,14 @@
             // lblReporteFinal
             // 
             this.lblReporteFinal.AutoSize = true;
-            this.lblReporteFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReporteFinal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblReporteFinal.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReporteFinal.Location = new System.Drawing.Point(199, 308);
             this.lblReporteFinal.Name = "lblReporteFinal";
-            this.lblReporteFinal.Size = new System.Drawing.Size(37, 29);
+            this.lblReporteFinal.Size = new System.Drawing.Size(36, 27);
             this.lblReporteFinal.TabIndex = 3;
             this.lblReporteFinal.Text = "---";
+            this.lblReporteFinal.Click += new System.EventHandler(this.LblReporteFinal_Click);
             // 
             // linkLabel1
             // 

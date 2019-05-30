@@ -48,6 +48,7 @@
     <Compile Include="Clases\Fasor.cs" />
     <Compile Include="Clases\IFasor.cs" />
     <Compile Include="Clases\NComplejo.cs" />
+    <Compile Include="Clases\RazonesTrigonometricas.cs" />
     <Compile Include="Forms\AgregarNumero.cs">
       <SubType>Form</SubType>
     </Compile>

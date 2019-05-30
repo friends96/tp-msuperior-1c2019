@@ -12,6 +12,8 @@ namespace TP_Matematica_Superior_Demo.Clases
         public double img { get; set; }
         public double modulo { get; set; }
         public double argumento { get; set; }
+        public int razon { get; set; }
+        public RazonesTrigonometricas Tipo { get; set; }
 
         public NComplejo()
         {
@@ -20,16 +22,18 @@ namespace TP_Matematica_Superior_Demo.Clases
             modulo = 0;
             argumento = 0;
         }
-        public NComplejo(double real, double img)
+        public NComplejo(double real, double img, int razon)
         {
             this.real = real;
             this.img = img;
+            this.razon = razon;
             complementarPolar();
         }
-        public NComplejo(double modulo, double argumento, string tipo)
+        public NComplejo(double modulo, double argumento, int razon, string tipo)
         {
             this.modulo = modulo;
             this.argumento = argumento*Math.PI;
+            this.razon = razon;
             complementarBinomica();
         }
 
@@ -42,7 +46,6 @@ namespace TP_Matematica_Superior_Demo.Clases
 
         private void complementarPolar()
         {
-            //throw new NotImplementedException();
             modulo = (double)Math.Sqrt(Math.Pow(real, 2) + Math.Pow(img, 2));
             argumento = Math.Atan2(img, real);
             //argumento = Math.Atan(img / real);
@@ -53,6 +56,28 @@ namespace TP_Matematica_Superior_Demo.Clases
             this.real = real;
             this.img = img;
             complementarPolar();
+        }
+
+        public void RELOAD(string tipo, double valor)
+        {
+            if(tipo == "real")
+            {
+                real = valor;
+                complementarPolar();
+            }else if(tipo == "img")
+            {
+                img = valor;
+                complementarPolar();
+            }else if(tipo == "modulo")
+            {
+                modulo = valor;
+                complementarBinomica();
+            }
+            else
+            {
+                argumento = valor;
+                complementarBinomica();
+            }
         }
     }
 }

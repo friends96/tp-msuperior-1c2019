@@ -21,25 +21,49 @@ namespace TP_Matematica_Superior_Demo.Services
         }
         public NComplejo Sumar(NComplejo f1, NComplejo f2)
         {
+            
+            if(f1.razon == 0) // 0 = seno  //  1 = coseno
+            {
+                f1.RELOAD("argumento", f1.argumento - Math.PI/2);
+            }
+            if(f2.razon == 0)
+            {
+                f2.RELOAD("argumento", f2.argumento - Math.PI/2);
+            }
             double real = (double)f1.real + (double)f2.real;
             double img = f1.img + f2.img;
-            NComplejo Respuesta = new NComplejo(real,img);
-            /*
-            MessageBox.Show($"" +
-                $"F1 = ({Math.Round(f1.real, 4)};{Math.Round(f1.img, 4)}) -- [{Math.Round(f1.modulo, 4)};{Math.Round(f1.argumento, 4)}]\n" +
-                $"F2 = ({Math.Round(f2.real, 4)};{Math.Round(f2.img, 4)}) -- [{Math.Round(f2.modulo, 4)};{Math.Round(f2.argumento, 4)}]\n" +
-                $"FR = ({Math.Round(Respuesta.real, 4)};{Math.Round(Respuesta.img, 4)}) -- [{Math.Round(Respuesta.modulo, 4)};{Math.Round(Respuesta.argumento),4}]");
-            */
+            NComplejo Respuesta = new NComplejo(real, img, 1); // El Fasor simpre suma en COSENOS
+
             return Respuesta;
+
         }
 
         public void REPORTARfasores(NComplejo fasor1, NComplejo fasor2, NComplejo fasorFinal)
         {
-            MessageBox.Show($"" +
-                $"       BINOMICO           POLAR\n" + 
+            
+            if(fasorFinal.argumento == Math.PI)
+            {
+                //π
+                MessageBox.Show($"" +
+                $"     BINOMICO           POLAR\n" +
                 $"F1 = ({Math.Round(fasor1.real, 4)};{Math.Round(fasor1.img, 4)})      ---      [{Math.Round(fasor1.modulo, 4)};{Math.Round(fasor1.argumento, 4)}]\n" +
                 $"F2 = ({Math.Round(fasor2.real, 4)};{Math.Round(fasor2.img, 4)})      ---      [{Math.Round(fasor2.modulo, 4)};{Math.Round(fasor2.argumento, 4)}]\n" +
-                $"FR = ({Math.Round(fasorFinal.real, 4)};{Math.Round(fasorFinal.img, 4)})      ---      [{Math.Round(fasorFinal.modulo, 4)};{Math.Round(fasorFinal.argumento, 4)}]\n");
+                $"FR = ({Math.Round(fasorFinal.real, 4)};{Math.Round(fasorFinal.img, 4)})      ---      [{Math.Round(fasorFinal.modulo, 4)};π]\n","COS");
+            }
+            else
+            {
+                MessageBox.Show($"" +
+                $"     BINOMICO           POLAR\n" +
+                $"F1 = ({Math.Round(fasor1.real, 4)};{Math.Round(fasor1.img, 4)})      ---      [{Math.Round(fasor1.modulo, 4)};{Math.Round(fasor1.argumento, 4)}]\n" +
+                $"F2 = ({Math.Round(fasor2.real, 4)};{Math.Round(fasor2.img, 4)})      ---      [{Math.Round(fasor2.modulo, 4)};{Math.Round(fasor2.argumento, 4)}]\n" +
+                $"FR = ({Math.Round(fasorFinal.real, 4)};{Math.Round(fasorFinal.img, 4)})      ---      [{Math.Round(fasorFinal.modulo, 4)};{Math.Round(fasorFinal.argumento, 4)}]\n","COS");
+            }
+            
+        }
+
+        public void REPORTEfasorSUMA(Label miReporte, NComplejo f)
+        {
+            miReporte.Text = "Si Afecta la Label";
         }
     }
 }

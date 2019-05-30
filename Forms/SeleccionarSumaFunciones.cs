@@ -20,6 +20,10 @@ namespace TP_Matematica_Superior_Demo.Forms
 
         private Operador Servicio = new Operador();
 
+        private int razon1 = 1;
+        private int razon2 = 1;
+        private int razon3 = 1;
+
         public SeleccionarSumaFunciones()
         {
             InitializeComponent();
@@ -45,6 +49,7 @@ namespace TP_Matematica_Superior_Demo.Forms
         private void btnSumarFasores(object sender, EventArgs e)
         {
             Fasoriando();
+            lblReporteFinal.Visible = true;
         }
 
         private void Fasoriando()
@@ -52,18 +57,30 @@ namespace TP_Matematica_Superior_Demo.Forms
             if(txtBoxPulso1.Text == txtBoxPulso2.Text)
             {
                 linkLabel1.Visible = true;
-                NComplejo fasor1 = new NComplejo(Convert.ToDouble(txtBoxModulo1.Text), Convert.ToDouble(txtBoxArgumento1.Text), "POLAR");
-                NComplejo fasor2 = new NComplejo(Convert.ToDouble(txtBoxModulo2.Text), Convert.ToDouble(txtBoxArgumento2.Text), "POLAR");
+                NComplejo fasor1 = new NComplejo(Convert.ToDouble(txtBoxModulo1.Text), Convert.ToDouble(txtBoxArgumento1.Text), razon1,"POLAR");
+                NComplejo fasor2 = new NComplejo(Convert.ToDouble(txtBoxModulo2.Text), Convert.ToDouble(txtBoxArgumento2.Text), razon2,"POLAR");
                 NComplejo fasorFinal = new NComplejo();
 
                 fasorFinal = Servicio.Sumar(fasor1, fasor2);
+
+                //fasor1.Tipo = RazonesTrigonometricas.COS;
 
                 //Asignando
                 complejo1 = fasor1;
                 complejo2 = fasor2;
                 resultado = fasorFinal;
-
-                lblReporteFinal.Text = $"f1 + f2 = {Math.Round(fasorFinal.modulo, 3)} sen( {txtBoxPulso1.Text} X  + {Math.Round(fasorFinal.argumento, 4)} )";
+                //resultado.Tipo = RazonesTrigonometricas.TAN;
+                if(resultado.argumento == Math.PI)
+                {
+                    //Servicio.REPORTEfasorSUMA(lblReporteFinal, resultado);
+                    //π
+                    lblReporteFinal.Text = $"f1 + f2 = {Math.Round(fasorFinal.modulo, 3)} cos( {txtBoxPulso1.Text} X  + π )";
+                }
+                else
+                {
+                    //Servicio.REPORTEfasorSUMA( lblReporteFinal, resultado);
+                    lblReporteFinal.Text = $"f1 + f2 = {Math.Round(fasorFinal.modulo, 3)} cos( {txtBoxPulso1.Text} X  + {Math.Round(fasorFinal.argumento, 4)} )";
+                }
             }
             else
             {
@@ -78,6 +95,8 @@ namespace TP_Matematica_Superior_Demo.Forms
         {
             //txtBoxModulo1.Focus();
             this.ActiveControl = txtBoxModulo1;
+            linkLabel1.Visible = false;
+            lblReporteFinal.Visible = false;
         }
 
         private void TxtBoxModulo1_KeyPress(object sender, KeyPressEventArgs e)
@@ -136,6 +155,81 @@ namespace TP_Matematica_Superior_Demo.Forms
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Servicio.REPORTARfasores(complejo1, complejo2, resultado);
+        }
+
+        private void LblTrigo1_Click(object sender, EventArgs e)
+        {
+            lblReporteFinal.Text = "---";
+            lblReporteFinal.Visible = false;
+            linkLabel1.Visible = false;
+            if(lblTrigo1.Text == "sen")
+            {
+                razon1 = 1;
+                lblTrigo1.Text = "cos";
+                lblTrigo1.BackColor = Color.OrangeRed;
+            }
+            else
+            {
+                razon1 = 0;
+                lblTrigo1.Text = "sen";
+                lblTrigo1.BackColor = Color.Azure;
+            }
+        }
+
+        private void LblTrigo2_Click(object sender, EventArgs e)
+        {
+            lblReporteFinal.Text = "---";
+            lblReporteFinal.Visible = false;
+            linkLabel1.Visible = false;
+            if (lblTrigo2.Text == "sen")
+            {
+                razon2 = 1;
+                lblTrigo2.Text = "cos";
+                lblTrigo2.BackColor = Color.OrangeRed;
+            }
+            else
+            {
+                razon2 = 0;
+                lblTrigo2.Text = "sen";
+                lblTrigo2.BackColor = Color.Azure;
+            }
+        }
+
+        private void LblReporteFinal_Click(object sender, EventArgs e)
+        {
+            if(razon3 == 1)
+            {
+                razon3 = 0;
+                resultado.argumento = resultado.argumento + Math.PI / 2;
+                if (resultado.argumento == Math.PI)
+                {
+                    //Servicio.REPORTEfasorSUMA(lblReporteFinal, resultado);
+                    //π
+                    lblReporteFinal.Text = $"f1 + f2 = {Math.Round(resultado.modulo, 3)} sen( {txtBoxPulso1.Text} X  + π )";
+                }
+                else
+                {
+                    //Servicio.REPORTEfasorSUMA( lblReporteFinal, resultado);
+                    lblReporteFinal.Text = $"f1 + f2 = {Math.Round(resultado.modulo, 3)} sen( {txtBoxPulso1.Text} X  + {Math.Round(resultado.argumento, 4)} )";
+                }
+
+            }
+            else
+            {
+                razon3 = 1;
+                resultado.argumento = resultado.argumento - Math.PI / 2;
+                if (resultado.argumento == Math.PI)
+                {
+                    //Servicio.REPORTEfasorSUMA(lblReporteFinal, resultado);
+                    //π
+                    lblReporteFinal.Text = $"f1 + f2 = {Math.Round(resultado.modulo, 3)} cos( {txtBoxPulso1.Text} X  + π )";
+                }
+                else
+                {
+                    //Servicio.REPORTEfasorSUMA( lblReporteFinal, resultado);
+                    lblReporteFinal.Text = $"f1 + f2 = {Math.Round(resultado.modulo, 3)} cos( {txtBoxPulso1.Text} X  + {Math.Round(resultado.argumento, 4)} )";
+                }
+            }
         }
     }
 }
