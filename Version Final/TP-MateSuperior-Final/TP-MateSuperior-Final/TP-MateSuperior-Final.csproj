@@ -46,16 +46,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Form1.cs">
+    <Compile Include="Forms\FH_1_EDT.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\FH_1_EDT.Designer.cs">
+      <DependentUpon>FH_1_EDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FH_2_OB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FH_2_OB.Designer.cs">
+      <DependentUpon>FH_2_OB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FH_3_OA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FH_3_OA.Designer.cs">
+      <DependentUpon>FH_3_OA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FH_4_SF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FH_4_SF.Designer.cs">
+      <DependentUpon>FH_4_SF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FORM_Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Home.Designer.cs">
+      <DependentUpon>F_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HOME.Designer.cs">
+      <DependentUpon>FORM_Base.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FH_1_EDT.resx">
+      <DependentUpon>FH_1_EDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FH_2_OB.resx">
+      <DependentUpon>FH_2_OB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FH_3_OA.resx">
+      <DependentUpon>FH_3_OA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FH_4_SF.resx">
+      <DependentUpon>FH_4_SF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Home.resx">
+      <DependentUpon>F_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HOME.resx">
+      <DependentUpon>FORM_Base.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,6 +131,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\180319-math-dev-m.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logos-UTN.BA-cs6-fondo-blanco.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,3 +8,8 @@ C:\Users\Ever\Desktop\Mate Superior Fasores\tp-msuperior-1c2019\Version Final\TP
 C:\Users\Ever\Desktop\Mate Superior Fasores\tp-msuperior-1c2019\Version Final\TP-MateSuperior-Final\TP-MateSuperior-Final\obj\Debug\TP-MateSuperior-Final.csproj.CoreCompileInputs.cache
 C:\Users\Ever\Desktop\Mate Superior Fasores\tp-msuperior-1c2019\Version Final\TP-MateSuperior-Final\TP-MateSuperior-Final\obj\Debug\TP-MateSuperior-Final.exe
 C:\Users\Ever\Desktop\Mate Superior Fasores\tp-msuperior-1c2019\Version Final\TP-MateSuperior-Final\TP-MateSuperior-Final\obj\Debug\TP-MateSuperior-Final.pdb
+C:\Users\Ever\Desktop\Mate Superior Fasores\tp-msuperior-1c2019\Version Final\TP-MateSuperior-Final\TP-MateSuperior-Final\obj\Debug\TP_MateSuperior_Final.Forms.FH_1_EDT.resources
+C:\Users\Ever\Desktop\Mate Superior Fasores\tp-msuperior-1c2019\Version Final\TP-MateSuperior-Final\TP-MateSuperior-Final\obj\Debug\TP_MateSuperior_Final.Forms.F_Home.resources
+C:\Users\Ever\Desktop\Mate Superior Fasores\tp-msuperior-1c2019\Version Final\TP-MateSuperior-Final\TP-MateSuperior-Final\obj\Debug\TP_MateSuperior_Final.Forms.FH_2_OB.resources
+C:\Users\Ever\Desktop\Mate Superior Fasores\tp-msuperior-1c2019\Version Final\TP-MateSuperior-Final\TP-MateSuperior-Final\obj\Debug\TP_MateSuperior_Final.Forms.FH_3_OA.resources
+C:\Users\Ever\Desktop\Mate Superior Fasores\tp-msuperior-1c2019\Version Final\TP-MateSuperior-Final\TP-MateSuperior-Final\obj\Debug\TP_MateSuperior_Final.Forms.FH_4_SF.resources

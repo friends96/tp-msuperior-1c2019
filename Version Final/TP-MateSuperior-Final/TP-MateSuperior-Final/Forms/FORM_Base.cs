@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using TP_MateSuperior_Final.Forms;
 
 namespace TP_MateSuperior_Final
 {
@@ -64,6 +65,42 @@ namespace TP_MateSuperior_Final
         {
             ReleaseCapture();
             SendMesage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void AbrirFormHija(object formHija)
+        {
+            if (this.panelContenedor.Controls.Count > 0) this.panelContenedor.Controls.RemoveAt(0);
+            Form fh = formHija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(fh);
+            this.panelContenedor.Tag = fh;
+            fh.Show();
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new F_Home());
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FH_1_EDT());
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FH_2_OB());
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FH_3_OA());
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new FH_4_SF());
         }
     }
 }

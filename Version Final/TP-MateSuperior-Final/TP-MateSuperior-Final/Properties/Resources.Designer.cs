@@ -69,5 +69,15 @@ namespace TP_MateSuperior_Final.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logos_UTN_BA_cs6_fondo_blanco {
+            get {
+                object obj = ResourceManager.GetObject("Logos-UTN.BA-cs6-fondo-blanco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
