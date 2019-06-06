@@ -221,7 +221,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::TP_MateSuperior_Final.Properties.Resources._180319_math_dev_m;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(220, 160);
