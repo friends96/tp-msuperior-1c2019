@@ -16,5 +16,15 @@ namespace TP_MateSuperior_Final.Forms
         {
             InitializeComponent();
         }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
