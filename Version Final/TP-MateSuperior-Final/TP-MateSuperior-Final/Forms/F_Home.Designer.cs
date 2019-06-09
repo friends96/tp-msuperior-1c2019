@@ -161,9 +161,9 @@
             this.label11.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(259, 315);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(253, 22);
+            this.label11.Size = new System.Drawing.Size(270, 22);
             this.label11.TabIndex = 13;
-            this.label11.Text = "ING.  MARÍA LICIA PIÑEIRO";
+            this.label11.Text = "ING.  MARÍA  ALICIA PIÑEIRO";
             // 
             // label12
             // 
