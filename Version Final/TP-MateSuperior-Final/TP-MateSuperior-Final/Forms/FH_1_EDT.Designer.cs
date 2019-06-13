@@ -32,28 +32,28 @@
             this.label11 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnReporte1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textImaginario = new System.Windows.Forms.TextBox();
+            this.textReal = new System.Windows.Forms.TextBox();
+            this.btnConvertir1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnReporte2 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnConvertir2 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.textArgumento = new System.Windows.Forms.TextBox();
+            this.textModulo = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -69,7 +69,7 @@
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnConvertir1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(48, 46);
             this.panel1.Name = "panel1";
@@ -91,7 +91,7 @@
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.button2);
+            this.panel5.Controls.Add(this.btnReporte1);
             this.panel5.Location = new System.Drawing.Point(41, 320);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(229, 153);
@@ -109,20 +109,20 @@
             this.label7.Text = "[ ρ ; ϕ ]";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // btnReporte1
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 78);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(227, 49);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "[ ρ ; ϕ ]";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnReporte1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.btnReporte1.FlatAppearance.BorderSize = 0;
+            this.btnReporte1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.btnReporte1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporte1.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporte1.ForeColor = System.Drawing.Color.White;
+            this.btnReporte1.Location = new System.Drawing.Point(0, 78);
+            this.btnReporte1.Name = "btnReporte1";
+            this.btnReporte1.Size = new System.Drawing.Size(227, 49);
+            this.btnReporte1.TabIndex = 8;
+            this.btnReporte1.Text = "[ ρ ; ϕ ]";
+            this.btnReporte1.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -140,8 +140,8 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.textImaginario);
+            this.panel3.Controls.Add(this.textReal);
             this.panel3.Location = new System.Drawing.Point(19, 68);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(274, 119);
@@ -169,39 +169,42 @@
             this.label4.TabIndex = 2;
             this.label4.Text = "Imaginaria:";
             // 
-            // textBox2
+            // textImaginario
             // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(133, 59);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(126, 31);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textImaginario.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textImaginario.Location = new System.Drawing.Point(133, 59);
+            this.textImaginario.Name = "textImaginario";
+            this.textImaginario.Size = new System.Drawing.Size(126, 31);
+            this.textImaginario.TabIndex = 4;
+            this.textImaginario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textImaginario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextImaginario_KeyPress);
             // 
-            // textBox1
+            // textReal
             // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(133, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(126, 31);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textReal.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textReal.Location = new System.Drawing.Point(133, 17);
+            this.textReal.Name = "textReal";
+            this.textReal.Size = new System.Drawing.Size(126, 31);
+            this.textReal.TabIndex = 3;
+            this.textReal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textReal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextReal_KeyPress);
             // 
-            // button1
+            // btnConvertir1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(-2, 226);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(315, 49);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "CONVERTIR";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnConvertir1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnConvertir1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConvertir1.FlatAppearance.BorderSize = 0;
+            this.btnConvertir1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnConvertir1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConvertir1.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConvertir1.ForeColor = System.Drawing.Color.White;
+            this.btnConvertir1.Location = new System.Drawing.Point(-2, 226);
+            this.btnConvertir1.Name = "btnConvertir1";
+            this.btnConvertir1.Size = new System.Drawing.Size(315, 49);
+            this.btnConvertir1.TabIndex = 5;
+            this.btnConvertir1.Text = "CONVERTIR";
+            this.btnConvertir1.UseVisualStyleBackColor = false;
+            this.btnConvertir1.Click += new System.EventHandler(this.BtnConvertir1_Click);
             // 
             // label1
             // 
@@ -219,7 +222,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.panel6);
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.btnConvertir2);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.panel4);
@@ -228,30 +231,41 @@
             this.panel2.Size = new System.Drawing.Size(315, 517);
             this.panel2.TabIndex = 1;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(46, 307);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(101, 20);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "BINÓMICA:";
+            // 
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel6.Controls.Add(this.button3);
+            this.panel6.Controls.Add(this.btnReporte2);
             this.panel6.Controls.Add(this.label2);
             this.panel6.Location = new System.Drawing.Point(41, 320);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(229, 153);
             this.panel6.TabIndex = 10;
             // 
-            // button3
+            // btnReporte2
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(-2, 78);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(229, 49);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "( a ; b )";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnReporte2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.btnReporte2.FlatAppearance.BorderSize = 0;
+            this.btnReporte2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.btnReporte2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporte2.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporte2.ForeColor = System.Drawing.Color.White;
+            this.btnReporte2.Location = new System.Drawing.Point(-2, 78);
+            this.btnReporte2.Name = "btnReporte2";
+            this.btnReporte2.Size = new System.Drawing.Size(229, 49);
+            this.btnReporte2.TabIndex = 14;
+            this.btnReporte2.Text = "( a ; b )";
+            this.btnReporte2.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -264,21 +278,21 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "( Real ; Img )";
             // 
-            // button4
+            // btnConvertir2
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(-2, 226);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(315, 49);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "CONVERTIR";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnConvertir2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnConvertir2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConvertir2.FlatAppearance.BorderSize = 0;
+            this.btnConvertir2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnConvertir2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConvertir2.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConvertir2.ForeColor = System.Drawing.Color.White;
+            this.btnConvertir2.Location = new System.Drawing.Point(-2, 226);
+            this.btnConvertir2.Name = "btnConvertir2";
+            this.btnConvertir2.Size = new System.Drawing.Size(315, 49);
+            this.btnConvertir2.TabIndex = 12;
+            this.btnConvertir2.Text = "CONVERTIR";
+            this.btnConvertir2.UseVisualStyleBackColor = false;
             // 
             // label10
             // 
@@ -307,8 +321,8 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.label9);
-            this.panel4.Controls.Add(this.textBox3);
-            this.panel4.Controls.Add(this.textBox4);
+            this.panel4.Controls.Add(this.textArgumento);
+            this.panel4.Controls.Add(this.textModulo);
             this.panel4.Location = new System.Drawing.Point(19, 68);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(274, 119);
@@ -336,34 +350,25 @@
             this.label9.TabIndex = 2;
             this.label9.Text = "Argumento:";
             // 
-            // textBox3
+            // textArgumento
             // 
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(133, 59);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(126, 31);
-            this.textBox3.TabIndex = 4;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textArgumento.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textArgumento.Location = new System.Drawing.Point(133, 59);
+            this.textArgumento.Name = "textArgumento";
+            this.textArgumento.Size = new System.Drawing.Size(126, 31);
+            this.textArgumento.TabIndex = 4;
+            this.textArgumento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textArgumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextArgumento_KeyPress);
             // 
-            // textBox4
+            // textModulo
             // 
-            this.textBox4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(133, 17);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(126, 31);
-            this.textBox4.TabIndex = 3;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(46, 307);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(101, 20);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "BINÓMICA:";
+            this.textModulo.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textModulo.Location = new System.Drawing.Point(133, 17);
+            this.textModulo.Name = "textModulo";
+            this.textModulo.Size = new System.Drawing.Size(126, 31);
+            this.textModulo.TabIndex = 3;
+            this.textModulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textModulo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextModulo_KeyPress);
             // 
             // FH_1_EDT
             // 
@@ -395,27 +400,27 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textReal;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textImaginario;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnConvertir1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnReporte1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnReporte2;
+        private System.Windows.Forms.Button btnConvertir2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textArgumento;
+        private System.Windows.Forms.TextBox textModulo;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label11;
