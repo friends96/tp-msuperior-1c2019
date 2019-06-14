@@ -27,30 +27,30 @@ namespace TP_MateSuperior_Final.Forms
 
         private void TextReal_KeyPress(object sender, KeyPressEventArgs e)
         {
-            validador.TEXTO_Decimal(e);
+            validador.TEXTO_KeyPress(e);
         }
 
         private void TextImaginario_KeyPress(object sender, KeyPressEventArgs e)
         {
-            validador.TEXTO_Decimal(e);
+            validador.TEXTO_KeyPress(e);
         }
 
         private void TextModulo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            validador.TEXTO_Decimal(e);
+            validador.TEXTO_KeyPress(e);
         }
 
         private void TextArgumento_KeyPress(object sender, KeyPressEventArgs e)
         {
-            validador.TEXTO_Decimal(e);
+            validador.TEXTO_KeyPress(e);
         }
 
         private void BtnConvertir1_Click(object sender, EventArgs e)
         {
-            texto1OK = validador.NUMERO_Decimal(textReal.Text);
+            texto1OK = validador.TEXTO_EsDecimalValido(textReal.Text);
             if (texto1OK)
             {
-                string_decimal = validador.NORMALIZACION_Decimal(textReal.Text);
+                string_decimal = validador.TEXTO_Normalizado(textReal.Text); // Cambia '.' por ','
                 btnReporte1.Text = string_decimal;
                 numero = Convert.ToDouble(string_decimal);
                 numero = numero + 10;

@@ -29,3 +29,4 @@ C:\Users\ever_\Desktop\TP Mate Superior\tp-msuperior-1c2019\Version Final\TP-Mat
 C:\Users\ever_\Desktop\TP Mate Superior\tp-msuperior-1c2019\Version Final\TP-MateSuperior-Final\TP-MateSuperior-Final\obj\Debug\TP-MateSuperior-Final.exe
 C:\Users\ever_\Desktop\TP Mate Superior\tp-msuperior-1c2019\Version Final\TP-MateSuperior-Final\TP-MateSuperior-Final\obj\Debug\TP-MateSuperior-Final.pdb
 C:\Users\Ever\Desktop\Mate Superior Fasores\tp-msuperior-1c2019\Version Final\TP-MateSuperior-Final\TP-MateSuperior-Final\obj\Debug\TP_MateSuperior_Final.Forms.FormCargaComplejo.resources
+C:\Users\ever_\Desktop\TP Mate Superior\tp-msuperior-1c2019\Version Final\TP-MateSuperior-Final\TP-MateSuperior-Final\obj\Debug\TP_MateSuperior_Final.Forms.FormCargaComplejo.resources
