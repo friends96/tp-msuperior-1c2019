@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Fasores.cs" />
     <Compile Include="Clases\IForm.cs" />
+    <Compile Include="Clases\NComplejo.cs" />
     <Compile Include="Forms\FormCargaComplejo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +93,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicios\ServicesOperator.cs" />
     <Compile Include="Servicios\ValidarDatos.cs" />
     <EmbeddedResource Include="Forms\FormCargaComplejo.resx">
       <DependentUpon>FormCargaComplejo.cs</DependentUpon>

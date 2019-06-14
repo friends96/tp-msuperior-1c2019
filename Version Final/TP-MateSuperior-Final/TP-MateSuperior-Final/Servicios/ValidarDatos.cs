@@ -46,19 +46,16 @@ namespace TP_MateSuperior_Final.Servicios
             if(texto == "")
             {
                 resultado = true;
-                //MessageBox.Show("Numero VÁLIDO !!!!!!!! y VACIO = 0");
             }
             else if (texto.Length == 1)
             {
                 if(texto[0] == '.' || texto[0] == ',' || texto[0] == '-')
                 {
                     resultado = false;
-                    //MessageBox.Show("El Número Ingresado no es Válido.. ;;;;;;;;");
                 }
                 else
                 {
                     resultado = true;
-                    //MessageBox.Show("Numero VÁLIDO !!!!!!!!");
                 }
             }
             else if(texto[0] != ',' && texto[0] != '.')
@@ -84,13 +81,11 @@ namespace TP_MateSuperior_Final.Servicios
                 else
                 {
                     resultado = false;
-                    //MessageBox.Show("El Número Ingresado no es Válido..");
                 }
             }
             else
             {
                 resultado = false;
-                //MessageBox.Show("El Número Ingresado no es Válido..");
             }
             return resultado;
         }

@@ -51,7 +51,10 @@ namespace TP_MateSuperior_Final.Forms
             if (texto1OK)
             {
                 string_decimal = validador.TEXTO_Normalizado(textReal.Text); // Cambia '.' por ','
+
                 btnReporte1.Text = string_decimal;
+                btnReporte1.BackColor = Color.FromArgb(0,80,200);
+
                 numero = Convert.ToDouble(string_decimal);
                 numero = numero + 10;
                 MessageBox.Show("->" + numero);

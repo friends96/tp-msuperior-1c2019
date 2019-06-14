@@ -185,7 +185,7 @@
             this.textReal.Location = new System.Drawing.Point(133, 17);
             this.textReal.Name = "textReal";
             this.textReal.Size = new System.Drawing.Size(126, 31);
-            this.textReal.TabIndex = 3;
+            this.textReal.TabIndex = 0;
             this.textReal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textReal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextReal_KeyPress);
             // 
