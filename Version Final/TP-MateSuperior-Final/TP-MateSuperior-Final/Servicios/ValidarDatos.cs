@@ -12,7 +12,7 @@ namespace TP_MateSuperior_Final.Servicios
         public ValidarDatos()
         {
         }
-        public void TEXTO_KeyPress(KeyPressEventArgs e)
+        public void TEXTO_KeyPress_Decimal(KeyPressEventArgs e)
         {
             if (e.KeyChar >= 48 && e.KeyChar <= 57) // Valida Numeros de 0-9
             {
@@ -26,7 +26,7 @@ namespace TP_MateSuperior_Final.Servicios
             {
                 e.Handled = false;
             }
-            else if (e.KeyChar == 45)
+            else if (e.KeyChar == 45) // Valida el GUION
             {
                 e.Handled = false;
             }
@@ -36,7 +36,51 @@ namespace TP_MateSuperior_Final.Servicios
                 e.Handled = true;
             }
         }
+        public void TEXTO_KeyPress_ENTERO_Positivo(KeyPressEventArgs e)
+        {
+            if (e.KeyChar >= 48 && e.KeyChar <= 57) // Valida Numeros de 0-9
+            {
+                e.Handled = false;
+            }
+            else if (e.KeyChar == 8) // Valida "BackSpace" -> Para poder Borrar
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                //MessageBox.Show("Solo se aceptna numeros");
+                e.Handled = true;
+            }
+        }
+        public  bool TEXTO_EsNaturalValido(string texto)
+        {
+            bool resultado = true;
+            int i = 0;
+            int cont = 0;
+            if(texto.Length != 0)
+            {
+                if(texto.Length == 1)
+                {
+                    if (texto[0] == '0') resultado = false;
+                    else resultado = true;
+                }
+                else
+                {
+                    for (i = 0; i < texto.Length; i++)
+                    {
+                        if (texto[i] == '0') cont++;
+                    }
+                    if (texto.Length == cont) resultado = false;
+                    else resultado = true;
+                }
+            }
+            else
+            {
+                resultado = false;
+            }
 
+            return resultado;
+        }
         public bool TEXTO_EsDecimalValido(string texto)
         {
             bool resultado = true;

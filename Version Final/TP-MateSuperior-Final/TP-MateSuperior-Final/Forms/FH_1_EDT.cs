@@ -27,22 +27,22 @@ namespace TP_MateSuperior_Final.Forms
 
         private void TextReal_KeyPress(object sender, KeyPressEventArgs e)
         {
-            validador.TEXTO_KeyPress(e);
+            validador.TEXTO_KeyPress_Decimal(e);
         }
 
         private void TextImaginario_KeyPress(object sender, KeyPressEventArgs e)
         {
-            validador.TEXTO_KeyPress(e);
+            validador.TEXTO_KeyPress_Decimal(e);
         }
 
         private void TextModulo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            validador.TEXTO_KeyPress(e);
+            validador.TEXTO_KeyPress_Decimal(e);
         }
 
         private void TextArgumento_KeyPress(object sender, KeyPressEventArgs e)
         {
-            validador.TEXTO_KeyPress(e);
+            validador.TEXTO_KeyPress_Decimal(e);
         }
 
         private void BtnConvertir1_Click(object sender, EventArgs e)
