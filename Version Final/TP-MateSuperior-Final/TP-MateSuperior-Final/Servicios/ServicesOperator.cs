@@ -54,13 +54,13 @@ namespace TP_MateSuperior_Final.Servicios
         public NComplejo POTENCIA(NComplejo c1, int exponente)
         {
             double modulo = Math.Pow(c1.MODULO, exponente);
-            double argumento = (c1.ARGUMENTO / Math.PI) * exponente; // Se saca el PI, porque dentro del NComplejo se lo multuplica por PI al invocarlo
+            double argumento = c1.ARGUMENTO * exponente; //<<<< ======  Math.PI
             NComplejo Resultado = new NComplejo(modulo, argumento, "POLAR");
             return Resultado;
         }
         public NComplejo RAIZ_Nesima(NComplejo c1, int indice)
         {
-            NComplejo Resultado = new NComplejo(Math.Pow(c1.MODULO, 1/indice), (c1.ARGUMENTO / indice) /Math.PI, "POLAR");
+            NComplejo Resultado = new NComplejo(Math.Pow(c1.MODULO, 1/indice), c1.ARGUMENTO / indice, "POLAR"); // <<< === Math.PI
             return Resultado;
         }
     }

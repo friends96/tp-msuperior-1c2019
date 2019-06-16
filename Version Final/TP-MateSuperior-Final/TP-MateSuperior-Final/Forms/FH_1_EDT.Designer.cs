@@ -54,6 +54,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.textArgumento = new System.Windows.Forms.TextBox();
             this.textModulo = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -90,6 +92,7 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel5.Controls.Add(this.label12);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.btnReporte1);
             this.panel5.Location = new System.Drawing.Point(41, 320);
@@ -117,9 +120,9 @@
             this.btnReporte1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReporte1.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporte1.ForeColor = System.Drawing.Color.White;
-            this.btnReporte1.Location = new System.Drawing.Point(0, 78);
+            this.btnReporte1.Location = new System.Drawing.Point(-2, 78);
             this.btnReporte1.Name = "btnReporte1";
-            this.btnReporte1.Size = new System.Drawing.Size(227, 49);
+            this.btnReporte1.Size = new System.Drawing.Size(229, 49);
             this.btnReporte1.TabIndex = 8;
             this.btnReporte1.Text = "[ ρ ; ϕ ]";
             this.btnReporte1.UseVisualStyleBackColor = false;
@@ -293,6 +296,7 @@
             this.btnConvertir2.TabIndex = 12;
             this.btnConvertir2.Text = "CONVERTIR";
             this.btnConvertir2.UseVisualStyleBackColor = false;
+            this.btnConvertir2.Click += new System.EventHandler(this.BtnConvertir2_Click);
             // 
             // label10
             // 
@@ -319,6 +323,7 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.textArgumento);
@@ -355,7 +360,7 @@
             this.textArgumento.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textArgumento.Location = new System.Drawing.Point(133, 59);
             this.textArgumento.Name = "textArgumento";
-            this.textArgumento.Size = new System.Drawing.Size(126, 31);
+            this.textArgumento.Size = new System.Drawing.Size(82, 31);
             this.textArgumento.TabIndex = 4;
             this.textArgumento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textArgumento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextArgumento_KeyPress);
@@ -369,6 +374,35 @@
             this.textModulo.TabIndex = 3;
             this.textModulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textModulo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextModulo_KeyPress);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(221, 59);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(38, 31);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "π";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(118, 20);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(34, 19);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "rad";
             // 
             // FH_1_EDT
             // 
@@ -425,5 +459,7 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label12;
     }
 }

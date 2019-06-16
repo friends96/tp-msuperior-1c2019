@@ -32,7 +32,7 @@ namespace TP_MateSuperior_Final.Clases
             }else if(modo == "POLAR")
             {
                 MODULO = num1;
-                ARGUMENTO = num2 * Math.PI;
+                ARGUMENTO = num2; // <<<< ========= Math.PI;
                 complementarBINOMICA();
             }
             else
@@ -48,6 +48,8 @@ namespace TP_MateSuperior_Final.Clases
         {
             MODULO = Math.Sqrt(Math.Pow(REAL, 2) + Math.Pow(IMG, 2));
             ARGUMENTO = Math.Atan2(IMG, REAL);
+            if (REAL < 0 && IMG < 0) ARGUMENTO = ARGUMENTO + 2 * Math.PI;
+            if (REAL >= 0 && IMG < 0) ARGUMENTO = ARGUMENTO + 2 * Math.PI;
         }
         private void complementarBINOMICA()
         {

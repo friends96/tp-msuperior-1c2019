@@ -52,10 +52,10 @@ namespace TP_MateSuperior_Final.Servicios
                 e.Handled = true;
             }
         }
-        public  bool TEXTO_EsNaturalValido(string texto)
+        public bool TEXTO_EsExponenteValido(string texto)
         {
-            bool resultado = true;
-            int i = 0;
+            bool resultado;
+            int i;
             int cont = 0;
             if(texto.Length != 0)
             {
@@ -83,9 +83,9 @@ namespace TP_MateSuperior_Final.Servicios
         }
         public bool TEXTO_EsDecimalValido(string texto)
         {
-            bool resultado = true;
+            bool resultado;
             int cont = 0, GUION_cont = 0;
-            int i = 0;
+            int i;
             
             if(texto == "")
             {
