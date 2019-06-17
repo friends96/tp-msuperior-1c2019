@@ -49,6 +49,12 @@
     <Compile Include="Clases\Fasores.cs" />
     <Compile Include="Clases\IForm.cs" />
     <Compile Include="Clases\NComplejo.cs" />
+    <Compile Include="Forms\FCargaCpmlejo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FCargaCpmlejo.Designer.cs">
+      <DependentUpon>FCargaCpmlejo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormCargaComplejo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     <Compile Include="Servicios\ServicesOperator.cs" />
     <Compile Include="Servicios\ServicesREPORT.cs" />
     <Compile Include="Servicios\ValidarDatos.cs" />
+    <EmbeddedResource Include="Forms\FCargaCpmlejo.resx">
+      <DependentUpon>FCargaCpmlejo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormCargaComplejo.resx">
       <DependentUpon>FormCargaComplejo.cs</DependentUpon>
     </EmbeddedResource>

@@ -81,26 +81,68 @@ namespace TP_MateSuperior_Final
         private void PictureBox1_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new F_Home());
+            SELECCION_Activa(0);
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new FH_1_EDT());
+            SELECCION_Activa(1);
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new FH_2_OB());
+            SELECCION_Activa(2);
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new FH_3_OA());
+            SELECCION_Activa(3);
         }
 
         private void Button4_Click(object sender, EventArgs e)
         {
             AbrirFormHija(new FH_4_SF());
+            SELECCION_Activa(4);
+        }
+
+        private void SELECCION_Activa(int selector)
+        {
+            switch (selector)
+            {
+                case 1:
+                    button1.BackColor = Color.FromArgb(0, 80, 200);
+                    button2.BackColor = Color.FromArgb(26, 32, 40);
+                    button3.BackColor = Color.FromArgb(26, 32, 40);
+                    button4.BackColor = Color.FromArgb(26, 32, 40);
+                    break;
+                case 2:
+                    button1.BackColor = Color.FromArgb(26, 32, 40);
+                    button2.BackColor = Color.FromArgb(0, 80, 200);
+                    button3.BackColor = Color.FromArgb(26, 32, 40);
+                    button4.BackColor = Color.FromArgb(26, 32, 40);
+                    break;
+                case 3:
+                    button1.BackColor = Color.FromArgb(26, 32, 40);
+                    button2.BackColor = Color.FromArgb(26, 32, 40);
+                    button3.BackColor = Color.FromArgb(0, 80, 200);
+                    button4.BackColor = Color.FromArgb(26, 32, 40);
+                    break;
+                case 4:
+                    button1.BackColor = Color.FromArgb(26, 32, 40);
+                    button2.BackColor = Color.FromArgb(26, 32, 40);
+                    button3.BackColor = Color.FromArgb(26, 32, 40);
+                    button4.BackColor = Color.FromArgb(0, 80, 200);
+                    break;
+                default:
+                    button1.BackColor = Color.FromArgb(26, 32, 40);
+                    button2.BackColor = Color.FromArgb(26, 32, 40);
+                    button3.BackColor = Color.FromArgb(26, 32, 40);
+                    button4.BackColor = Color.FromArgb(26, 32, 40);
+                    break;
+            }
         }
     }
 }

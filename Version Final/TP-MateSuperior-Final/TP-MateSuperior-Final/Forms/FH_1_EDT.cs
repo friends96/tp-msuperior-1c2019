@@ -28,6 +28,7 @@ namespace TP_MateSuperior_Final.Forms
         private string normalizado_real, normalizado_imaginario;
         private string normalizado_modulo, normalizado_argumetno;
         private double numero;
+        private double anguloFormato = Math.PI;
 
         // ======================================================================================
 
@@ -60,7 +61,7 @@ namespace TP_MateSuperior_Final.Forms
                 if (textArgumento.Text == "") argumetno = 0;
                 else argumetno = Convert.ToDouble(normalizado_argumetno);
 
-                NComplejo complejo2 = new NComplejo(modulo, argumetno*Math.PI, "POLAR");
+                NComplejo complejo2 = new NComplejo(modulo, argumetno * anguloFormato, "POLAR");
 
                 REPORTE.TEXTBOX_esValido(textModulo, "OK");
                 REPORTE.TEXTBOX_esValido(textArgumento, "OK");
@@ -76,6 +77,22 @@ namespace TP_MateSuperior_Final.Forms
 
                 REPORTE.BOTON_Complejo(nulo, btnReporte2, "ERROR");
                 MessageBox.Show("El DATO ingresado NO es Válido");
+            }
+        }
+
+        private void Angulo_Click(object sender, EventArgs e)
+        {
+            if(angulo.Text == "π")
+            {
+                angulo.Text = "°";
+                anguloFormato = Math.PI / 180;
+                labelAngulo.Text = "( grados )";
+            }
+            else
+            {
+                angulo.Text = "π";
+                anguloFormato = Math.PI;
+                labelAngulo.Text = "( rad )";
             }
         }
 

@@ -30,22 +30,22 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCarga2 = new System.Windows.Forms.Button();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.LinkLabelEditar2 = new System.Windows.Forms.LinkLabel();
             this.btnCargado2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnMultiplicar = new System.Windows.Forms.Button();
+            this.btnDividir = new System.Windows.Forms.Button();
+            this.btnRestar = new System.Windows.Forms.Button();
+            this.btnSumar = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.labelResultado = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.btnRerporte = new System.Windows.Forms.Button();
+            this.LinkLabelModo = new System.Windows.Forms.LinkLabel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnCarga1 = new System.Windows.Forms.Button();
             this.btnCargado1 = new System.Windows.Forms.Button();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
+            this.LinkLabelEditar1 = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -58,7 +58,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnCarga2);
-            this.panel1.Controls.Add(this.linkLabel3);
+            this.panel1.Controls.Add(this.LinkLabelEditar2);
             this.panel1.Controls.Add(this.btnCargado2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(52, 44);
@@ -82,20 +82,21 @@
             this.btnCarga2.Text = "+";
             this.btnCarga2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCarga2.UseVisualStyleBackColor = true;
+            this.btnCarga2.Click += new System.EventHandler(this.BtnCarga2_Click);
             // 
-            // linkLabel3
+            // LinkLabelEditar2
             // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel3.LinkColor = System.Drawing.Color.White;
-            this.linkLabel3.Location = new System.Drawing.Point(473, 190);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(59, 22);
-            this.linkLabel3.TabIndex = 5;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "Editar";
-            this.linkLabel3.Visible = false;
-            this.linkLabel3.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.LinkLabelEditar2.AutoSize = true;
+            this.LinkLabelEditar2.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkLabelEditar2.LinkColor = System.Drawing.Color.White;
+            this.LinkLabelEditar2.Location = new System.Drawing.Point(473, 190);
+            this.LinkLabelEditar2.Name = "LinkLabelEditar2";
+            this.LinkLabelEditar2.Size = new System.Drawing.Size(59, 22);
+            this.LinkLabelEditar2.TabIndex = 5;
+            this.LinkLabelEditar2.TabStop = true;
+            this.LinkLabelEditar2.Text = "Editar";
+            this.LinkLabelEditar2.Visible = false;
+            this.LinkLabelEditar2.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             // 
             // btnCargado2
             // 
@@ -126,80 +127,80 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.btnMultiplicar);
+            this.panel2.Controls.Add(this.btnDividir);
+            this.panel2.Controls.Add(this.btnRestar);
+            this.panel2.Controls.Add(this.btnSumar);
             this.panel2.Location = new System.Drawing.Point(52, 316);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(672, 56);
             this.panel2.TabIndex = 1;
             // 
-            // button7
+            // btnMultiplicar
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(100)))));
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(335, 0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(170, 53);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "MULTIPLICACIÓN";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnMultiplicar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(100)))));
+            this.btnMultiplicar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMultiplicar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnMultiplicar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMultiplicar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMultiplicar.ForeColor = System.Drawing.Color.White;
+            this.btnMultiplicar.Location = new System.Drawing.Point(335, 0);
+            this.btnMultiplicar.Name = "btnMultiplicar";
+            this.btnMultiplicar.Size = new System.Drawing.Size(170, 53);
+            this.btnMultiplicar.TabIndex = 5;
+            this.btnMultiplicar.Text = "MULTIPLICACIÓN";
+            this.btnMultiplicar.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnDividir
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(100)))));
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(504, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(168, 53);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "DIVISIÓN";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnDividir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(100)))));
+            this.btnDividir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDividir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnDividir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDividir.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDividir.ForeColor = System.Drawing.Color.White;
+            this.btnDividir.Location = new System.Drawing.Point(504, 0);
+            this.btnDividir.Name = "btnDividir";
+            this.btnDividir.Size = new System.Drawing.Size(168, 53);
+            this.btnDividir.TabIndex = 4;
+            this.btnDividir.Text = "DIVISIÓN";
+            this.btnDividir.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // btnRestar
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(100)))));
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(167, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(169, 53);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "RESTA";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnRestar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(100)))));
+            this.btnRestar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRestar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnRestar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRestar.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestar.ForeColor = System.Drawing.Color.White;
+            this.btnRestar.Location = new System.Drawing.Point(167, 0);
+            this.btnRestar.Name = "btnRestar";
+            this.btnRestar.Size = new System.Drawing.Size(169, 53);
+            this.btnRestar.TabIndex = 3;
+            this.btnRestar.Text = "RESTA";
+            this.btnRestar.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnSumar
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(100)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(168, 53);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "SUMA";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnSumar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(100)))));
+            this.btnSumar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSumar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnSumar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSumar.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSumar.ForeColor = System.Drawing.Color.White;
+            this.btnSumar.Location = new System.Drawing.Point(0, 0);
+            this.btnSumar.Name = "btnSumar";
+            this.btnSumar.Size = new System.Drawing.Size(168, 53);
+            this.btnSumar.TabIndex = 2;
+            this.btnSumar.Text = "SUMA";
+            this.btnSumar.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.labelResultado);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.btnRerporte);
             this.panel3.Location = new System.Drawing.Point(52, 410);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(672, 159);
@@ -216,34 +217,34 @@
             this.labelResultado.TabIndex = 3;
             this.labelResultado.Text = "Resultado:";
             // 
-            // button1
+            // btnRerporte
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial Narrow", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(-2, 56);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(672, 45);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "( a , b )";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnRerporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.btnRerporte.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRerporte.FlatAppearance.BorderSize = 0;
+            this.btnRerporte.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.btnRerporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRerporte.Font = new System.Drawing.Font("Arial Narrow", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRerporte.ForeColor = System.Drawing.Color.White;
+            this.btnRerporte.Location = new System.Drawing.Point(-2, 56);
+            this.btnRerporte.Name = "btnRerporte";
+            this.btnRerporte.Size = new System.Drawing.Size(672, 45);
+            this.btnRerporte.TabIndex = 0;
+            this.btnRerporte.Text = "( a , b )";
+            this.btnRerporte.UseVisualStyleBackColor = false;
             // 
-            // linkLabel1
+            // LinkLabelModo
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Arial", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(336, 397);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(104, 22);
-            this.linkLabel1.TabIndex = 1;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Binómica:";
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.LinkLabelModo.AutoSize = true;
+            this.LinkLabelModo.Font = new System.Drawing.Font("Arial", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkLabelModo.LinkColor = System.Drawing.Color.White;
+            this.LinkLabelModo.Location = new System.Drawing.Point(336, 397);
+            this.LinkLabelModo.Name = "LinkLabelModo";
+            this.LinkLabelModo.Size = new System.Drawing.Size(104, 22);
+            this.LinkLabelModo.TabIndex = 1;
+            this.LinkLabelModo.TabStop = true;
+            this.LinkLabelModo.Text = "Binómica:";
+            this.LinkLabelModo.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             // 
             // panel4
             // 
@@ -251,7 +252,7 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel4.Controls.Add(this.btnCarga1);
             this.panel4.Controls.Add(this.btnCargado1);
-            this.panel4.Controls.Add(this.linkLabel2);
+            this.panel4.Controls.Add(this.LinkLabelEditar1);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Location = new System.Drawing.Point(52, 44);
             this.panel4.Name = "panel4";
@@ -292,19 +293,19 @@
             this.btnCargado1.UseVisualStyleBackColor = true;
             this.btnCargado1.Visible = false;
             // 
-            // linkLabel2
+            // LinkLabelEditar1
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.LinkColor = System.Drawing.Color.White;
-            this.linkLabel2.Location = new System.Drawing.Point(143, 190);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(59, 22);
-            this.linkLabel2.TabIndex = 2;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Editar";
-            this.linkLabel2.Visible = false;
-            this.linkLabel2.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.LinkLabelEditar1.AutoSize = true;
+            this.LinkLabelEditar1.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkLabelEditar1.LinkColor = System.Drawing.Color.White;
+            this.LinkLabelEditar1.Location = new System.Drawing.Point(143, 190);
+            this.LinkLabelEditar1.Name = "LinkLabelEditar1";
+            this.LinkLabelEditar1.Size = new System.Drawing.Size(59, 22);
+            this.LinkLabelEditar1.TabIndex = 2;
+            this.LinkLabelEditar1.TabStop = true;
+            this.LinkLabelEditar1.Text = "Editar";
+            this.LinkLabelEditar1.Visible = false;
+            this.LinkLabelEditar1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             // 
             // label1
             // 
@@ -323,7 +324,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(780, 612);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.LinkLabelModo);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -348,21 +349,21 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnRerporte;
+        private System.Windows.Forms.LinkLabel LinkLabelModo;
+        private System.Windows.Forms.Button btnSumar;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnMultiplicar;
+        private System.Windows.Forms.Button btnDividir;
+        private System.Windows.Forms.Button btnRestar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.LinkLabel linkLabel3;
-        private System.Windows.Forms.Button btnCargado2;
-        private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.Button btnCarga2;
         public System.Windows.Forms.Label labelResultado;
         public System.Windows.Forms.Button btnCarga1;
         public System.Windows.Forms.Button btnCargado1;
+        public System.Windows.Forms.LinkLabel LinkLabelEditar2;
+        public System.Windows.Forms.Button btnCargado2;
+        public System.Windows.Forms.LinkLabel LinkLabelEditar1;
+        public System.Windows.Forms.Button btnCarga2;
     }
 }

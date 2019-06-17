@@ -21,11 +21,12 @@ namespace TP_MateSuperior_Final.Forms
         private void Button1_Click(object sender, EventArgs e)
         {
             FH_2_OB frmPadre = this.Owner as FH_2_OB;
-            frmPadre.mensaje = textBox1.Text;
 
+            frmPadre.mensaje = textBox1.Text;
             frmPadre.btnCargado1.Visible = true;
             frmPadre.btnCargado1.Text = textBox1.Text;
             frmPadre.btnCarga1.Visible = false;
+
             this.Close();
         }
 

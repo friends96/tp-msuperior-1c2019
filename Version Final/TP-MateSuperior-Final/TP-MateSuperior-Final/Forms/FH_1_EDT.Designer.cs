@@ -31,6 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnReporte1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,12 +51,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.labelAngulo = new System.Windows.Forms.Label();
+            this.angulo = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.textArgumento = new System.Windows.Forms.TextBox();
             this.textModulo = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -99,6 +100,18 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(229, 153);
             this.panel5.TabIndex = 9;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(118, 20);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(34, 19);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "rad";
             // 
             // label7
             // 
@@ -323,7 +336,8 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.labelAngulo);
+            this.panel4.Controls.Add(this.angulo);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.label9);
             this.panel4.Controls.Add(this.textArgumento);
@@ -332,6 +346,35 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(274, 119);
             this.panel4.TabIndex = 10;
+            // 
+            // labelAngulo
+            // 
+            this.labelAngulo.AutoSize = true;
+            this.labelAngulo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.labelAngulo.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAngulo.ForeColor = System.Drawing.Color.White;
+            this.labelAngulo.Location = new System.Drawing.Point(27, 84);
+            this.labelAngulo.Name = "labelAngulo";
+            this.labelAngulo.Size = new System.Drawing.Size(49, 18);
+            this.labelAngulo.TabIndex = 15;
+            this.labelAngulo.Text = "( rad )";
+            // 
+            // angulo
+            // 
+            this.angulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
+            this.angulo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.angulo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
+            this.angulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.angulo.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.angulo.ForeColor = System.Drawing.Color.White;
+            this.angulo.Location = new System.Drawing.Point(221, 59);
+            this.angulo.Name = "angulo";
+            this.angulo.Size = new System.Drawing.Size(38, 31);
+            this.angulo.TabIndex = 13;
+            this.angulo.Text = "π";
+            this.angulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.angulo.UseVisualStyleBackColor = false;
+            this.angulo.Click += new System.EventHandler(this.Angulo_Click);
             // 
             // label8
             // 
@@ -374,35 +417,6 @@
             this.textModulo.TabIndex = 3;
             this.textModulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textModulo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextModulo_KeyPress);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSteelBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(221, 59);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(38, 31);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "π";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(118, 20);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(34, 19);
-            this.label12.TabIndex = 14;
-            this.label12.Text = "rad";
             // 
             // FH_1_EDT
             // 
@@ -459,7 +473,8 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button angulo;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label labelAngulo;
     }
 }
