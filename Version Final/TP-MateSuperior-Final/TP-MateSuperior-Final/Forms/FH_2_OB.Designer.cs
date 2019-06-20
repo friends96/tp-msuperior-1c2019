@@ -151,6 +151,7 @@
             this.btnMultiplicar.TabIndex = 5;
             this.btnMultiplicar.Text = "MULTIPLICACIÓN";
             this.btnMultiplicar.UseVisualStyleBackColor = false;
+            this.btnMultiplicar.Click += new System.EventHandler(this.BtnMultiplicar_Click);
             // 
             // btnDividir
             // 
@@ -166,6 +167,7 @@
             this.btnDividir.TabIndex = 4;
             this.btnDividir.Text = "DIVISIÓN";
             this.btnDividir.UseVisualStyleBackColor = false;
+            this.btnDividir.Click += new System.EventHandler(this.BtnDividir_Click);
             // 
             // btnRestar
             // 
@@ -181,6 +183,7 @@
             this.btnRestar.TabIndex = 3;
             this.btnRestar.Text = "RESTA";
             this.btnRestar.UseVisualStyleBackColor = false;
+            this.btnRestar.Click += new System.EventHandler(this.BtnRestar_Click);
             // 
             // btnSumar
             // 
@@ -196,6 +199,7 @@
             this.btnSumar.TabIndex = 2;
             this.btnSumar.Text = "SUMA";
             this.btnSumar.UseVisualStyleBackColor = false;
+            this.btnSumar.Click += new System.EventHandler(this.BtnSumar_Click);
             // 
             // panel3
             // 

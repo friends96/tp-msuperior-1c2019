@@ -43,12 +43,12 @@ namespace TP_MateSuperior_Final.Servicios
         }
         public NComplejo DIVIDIR(NComplejo c1, NComplejo c2)
         {
-            
+            /*
             NComplejo AUX = new NComplejo();
             AUX = MULTIPLICAR(c1, Complemento(c2));
             NComplejo resultado = new NComplejo(AUX.REAL / c2.MODULO, AUX.IMG / c2.MODULO, "BIN");
-            
-            //NComplejo resultado = new NComplejo(c1.MODULO / c2.MODULO, c1.ARGUMENTO - c2.ARGUMENTO, "POLAR");
+            */
+            NComplejo resultado = new NComplejo(c1.MODULO / c2.MODULO, c1.ARGUMENTO - c2.ARGUMENTO, "POLAR");
             return resultado;
         }
         public NComplejo POTENCIA(NComplejo c1, int exponente)

@@ -31,10 +31,47 @@ namespace TP_MateSuperior_Final.Forms
         public int operando = 0;
 
         private ServicesREPORT REPORTE = new ServicesREPORT();
+        private ServicesOperator OPERADOR = new ServicesOperator();
 
         //===========================================================
-        
+
         public string mensaje { get; set; } // Aca se guarda lo que se controla desde el HIJO
+
+        private void BtnSumar_Click(object sender, EventArgs e)
+        {
+            Selector(1);
+
+            NComplejo cAuxiliar = new NComplejo();
+            cAuxiliar = OPERADOR.SUMAR(c1, c2);
+            REPORTE.BOTON_Complejo(cAuxiliar, btnRerporte, "BIN");
+        }
+
+        private void BtnRestar_Click(object sender, EventArgs e)
+        {
+            Selector(2);
+
+            NComplejo cAuxiliar = new NComplejo();
+            cAuxiliar = OPERADOR.RESTAR(c1, c2);
+            REPORTE.BOTON_Complejo(cAuxiliar, btnRerporte, "BIN");
+        }
+
+        private void BtnMultiplicar_Click(object sender, EventArgs e)
+        {
+            Selector(3);
+
+            NComplejo cAuxiliar = new NComplejo();
+            cAuxiliar = OPERADOR.MULTIPLICAR(c1, c2);
+            REPORTE.BOTON_Complejo(cAuxiliar, btnRerporte, "BIN");
+        }
+
+        private void BtnDividir_Click(object sender, EventArgs e)
+        {
+            Selector(4);
+
+            NComplejo cAuxiliar = new NComplejo();
+            cAuxiliar = OPERADOR.DIVIDIR(c1, c2);
+            REPORTE.BOTON_Complejo(cAuxiliar, btnRerporte, "BIN");
+        }
 
         private void BtnCargado1_Click(object sender, EventArgs e)
         {
@@ -121,6 +158,42 @@ namespace TP_MateSuperior_Final.Forms
             }
 
             //MessageBox.Show($"REAL = {c2.REAL}\nIMG = {c2.IMG}");
+        }
+        private void Selector(int selector)
+        {
+            switch (selector)
+            {
+                case 1:
+                    btnSumar.BackColor = Color.FromArgb(0, 80, 200);
+                    btnRestar.BackColor = Color.FromArgb(49, 66, 100);
+                    btnMultiplicar.BackColor = Color.FromArgb(49, 66, 100);
+                    btnDividir.BackColor = Color.FromArgb(49, 66, 100);
+                    break;
+                case 2:
+                    btnSumar.BackColor = Color.FromArgb(49, 66, 100);
+                    btnRestar.BackColor = Color.FromArgb(0, 80, 200);
+                    btnMultiplicar.BackColor = Color.FromArgb(49, 66, 100);
+                    btnDividir.BackColor = Color.FromArgb(49, 66, 100);
+                    break;
+                case 3:
+                    btnSumar.BackColor = Color.FromArgb(49, 66, 100);
+                    btnRestar.BackColor = Color.FromArgb(49, 66, 100);
+                    btnMultiplicar.BackColor = Color.FromArgb(0, 80, 200);
+                    btnDividir.BackColor = Color.FromArgb(49, 66, 100);
+                    break;
+                case 4:
+                    btnSumar.BackColor = Color.FromArgb(49, 66, 100);
+                    btnRestar.BackColor = Color.FromArgb(49, 66, 100);
+                    btnMultiplicar.BackColor = Color.FromArgb(49, 66, 100);
+                    btnDividir.BackColor = Color.FromArgb(0, 80, 200);
+                    break;
+                default:
+                    btnSumar.BackColor = Color.FromArgb(49, 66, 100);
+                    btnRestar.BackColor = Color.FromArgb(49, 66, 100);
+                    btnMultiplicar.BackColor = Color.FromArgb(49, 66, 100);
+                    btnDividir.BackColor = Color.FromArgb(49, 66, 100);
+                    break;
+            }
         }
     }
 }
