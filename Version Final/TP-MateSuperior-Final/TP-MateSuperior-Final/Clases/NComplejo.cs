@@ -48,8 +48,8 @@ namespace TP_MateSuperior_Final.Clases
         {
             MODULO = Math.Sqrt(Math.Pow(REAL, 2) + Math.Pow(IMG, 2));
             ARGUMENTO = Math.Atan2(IMG, REAL);
-            if (REAL < 0 && IMG < 0) ARGUMENTO = ARGUMENTO + 2 * Math.PI;
-            if (REAL >= 0 && IMG < 0) ARGUMENTO = ARGUMENTO + 2 * Math.PI;
+            if (REAL <= 0 && IMG < 0) ARGUMENTO = ARGUMENTO + 2 * Math.PI; // 3er Cuadrante
+            if (REAL >= 0 && IMG < 0) ARGUMENTO = ARGUMENTO + 2 * Math.PI; // 4to Cuadrante
         }
         private void complementarBINOMICA()
         {

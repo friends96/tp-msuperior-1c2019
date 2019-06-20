@@ -209,6 +209,7 @@
             this.btnAngulo.Text = "π";
             this.btnAngulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnAngulo.UseVisualStyleBackColor = false;
+            this.btnAngulo.Click += new System.EventHandler(this.BtnAngulo_Click);
             // 
             // label8
             // 

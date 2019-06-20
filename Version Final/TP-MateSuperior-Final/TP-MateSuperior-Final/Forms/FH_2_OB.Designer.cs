@@ -113,6 +113,7 @@
             this.btnCargado2.Text = "( a ; b )";
             this.btnCargado2.UseVisualStyleBackColor = true;
             this.btnCargado2.Visible = false;
+            this.btnCargado2.Click += new System.EventHandler(this.BtnCargado2_Click);
             // 
             // label3
             // 
@@ -292,6 +293,7 @@
             this.btnCargado1.Text = "( a ; b )";
             this.btnCargado1.UseVisualStyleBackColor = true;
             this.btnCargado1.Visible = false;
+            this.btnCargado1.Click += new System.EventHandler(this.BtnCargado1_Click);
             // 
             // LinkLabelEditar1
             // 
